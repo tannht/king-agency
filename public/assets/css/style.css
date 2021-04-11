@@ -1,0 +1,38 @@
+ul {
+  list-style: none; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 103px;
+  padding: 10px; }
+  .navbar .logo {
+    width: 146.38px; }
+  .navbar ul {
+    display: flex;
+    width: 65%;
+    justify-content: space-between; }
+    .navbar ul a {
+      text-decoration: none; }
+
+.footer {
+  color: #fff;
+  background-color: #001d26;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.bottom-bar {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  background-color: #4099f1;
+  padding: 20px;
+  justify-content: space-between; }
+  .bottom-bar a {
+    color: white;
+    text-decoration: none; }
+  .bottom-bar .bottom-right {
+    display: flex;
+    width: 20%;
+    justify-content: space-between; }

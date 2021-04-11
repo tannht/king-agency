@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import K_app from './K_app';
+import Kagency from './Kagency';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <K_app/>
+    <Kagency/>
   </React.StrictMode>,
   document.getElementById('root')
 );

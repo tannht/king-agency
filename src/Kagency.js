@@ -1,5 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Route, NavLink,  Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -13,12 +17,10 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 function Kagency() {
   return (
     <div>
-     <Router>
-      <Header />
-
+      <Router>
+        <Header />
         <Switch>
           <Route path="/" exact>
-            
             <Home />
           </Route>
           <Route path="/about-us">
@@ -40,11 +42,7 @@ function Kagency() {
             <PrivacyPolicy />
           </Route>
         </Switch>
-        
-        
-        
-      
-      <Footer />
+        <Footer />
       </Router>
     </div>
   );

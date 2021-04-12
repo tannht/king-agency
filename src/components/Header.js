@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 function Header() {
   return (
-    <nav className="navbar container">
+    <nav className="navbar">
       <Logo />
       <ul className="nav">
         <li className="nav-item">

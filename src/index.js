@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Kagency from './Kagency';
 import reportWebVitals from './reportWebVitals';
-import '@fortawesome/fontawesome-free/css/all.min.css'; 
-import 'bootstrap-css-only/css/bootstrap.min.css'; 
-import 'mdbreact/dist/css/mdb.css';
+import 'antd/dist/antd.css';
+import 'jquery/dist/jquery.min.js';
 
 ReactDOM.render(
   <React.StrictMode>

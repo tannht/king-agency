@@ -15,6 +15,11 @@ ul {
     .navbar ul a {
       text-decoration: none; }
 
+#sub-menu {
+  display: none; }
+  #sub-menu .show {
+    display: block; }
+
 .footer {
   color: #fff;
   background-color: #001d26;

@@ -21,6 +21,12 @@ ul{
     }
   }
 }
+#sub-menu {
+  display: none;
+  .show{display:block}
+  
+}
+
 .footer {
   color: $light-color;
   background-color: $primary-color;
@@ -62,4 +68,5 @@ ul{
     width: 20%;
     justify-content: space-between;
   }
+  
 }

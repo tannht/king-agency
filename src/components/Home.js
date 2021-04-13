@@ -1,10 +1,13 @@
 import React from 'react';
-
+import HomeBanner from './sub_components/HomeBanner';
 function Home() {
   return (
     <div >
-     <h1>This is Home page</h1>
      
+     <HomeBanner/>
+     
+
+     <h1>This is Home page</h1>
     </div>
   );
 }

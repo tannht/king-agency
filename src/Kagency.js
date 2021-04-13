@@ -14,7 +14,6 @@ import Blog from "./components/Blog";
 import ContactUs from "./components/ContactUs";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import { BackTop } from 'antd';
-
 function Kagency() {
   return (
     <div>

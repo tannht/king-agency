@@ -1,6 +1,10 @@
 ul {
   list-style: none; }
 
+.hide {
+  display: none !important;
+  duration: 3s; }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -15,16 +19,12 @@ ul {
     .navbar ul a {
       text-decoration: none; }
 
-#sub-menu {
+.NavButtonModal .ant-modal-footer {
   display: none; }
-  #sub-menu .show {
-    display: block; }
 
 .footer {
   color: #fff;
   background-color: #001d26;
-  position: absolute;
-  bottom: 0;
   width: 100%; }
   .footer .footer-iconlink {
     width: 50%;

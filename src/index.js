@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Kagency from './Kagency';
 import reportWebVitals from './reportWebVitals';
-import 'antd/dist/antd.css';
-import 'jquery/dist/jquery.min.js';
 
 ReactDOM.render(
   <React.StrictMode>

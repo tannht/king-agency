@@ -1,15 +1,14 @@
-import { get } from "jquery";
+
 import React from "react";
 import { NavLink } from "react-router-dom";
 
 function Menu() {
- 
   return (
     <div>
       <div className="list-group" id="main-menu">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about-us">About us</NavLink>
-        <NavLink to="/our-work" id="our-work" onMouseHover={showSubmenu()}>
+        <NavLink to="/our-work" id="our-work" >
           Our work
           {/*sub menu */}
           <div className="list-group" id="sub-menu">

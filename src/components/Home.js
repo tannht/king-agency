@@ -1,15 +1,17 @@
 import React from 'react';
 import HomeBanner from './sub_components/HomeBanner';
 import ProjectList from './sub_components/ProjectList';
-import OurClients from './sub_components/OurClients';
+import ClientsLogo from './sub_components/ClientsLogo';
+import NewsList from './sub_components/NewsList'; 
 function Home() {
   return (
     <div className="">
-     
      <HomeBanner/>
      <ProjectList />
-      <OurClients />
-     <h1>This is Home page</h1>
+      <ClientsLogo />
+     <h3>News</h3>
+     <h4>Our Latest Articles</h4>
+     <NewsList/>
     </div>
   );
 }

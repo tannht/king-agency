@@ -16,8 +16,9 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 import { BackTop } from 'antd';
 function Kagency() {
   return (
-    <div>
+    <>
       <Router>
+     
         <Header />
         <Switch>
           <Route path="/" exact>
@@ -45,7 +46,7 @@ function Kagency() {
         <Footer />
       </Router>
       <BackTop />
-    </div>
+    </>
   );
 }
 

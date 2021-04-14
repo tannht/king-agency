@@ -1,15 +1,48 @@
 $primary-color: #001d26;
 $secondary-color: #4099f1;
 $light-color: #fff;
+/* Mixin */
+/* Set các giá trị với màn hình tương ứng */
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+  }
+}
+p{
+  font-size: 1rem;
+  @include mobile {     
+    font-size: 12px;   
+   }    
+}
+
 ul {
   list-style: none;
 }
-.hide{
-  display: none!important;
+.hide {
+  display: none !important;
   duration: 3s;
 }
+.header-section {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
 .navbar {
-  display: flex;
   justify-content: space-between;
   height: 103px;
   padding: 10px;
@@ -30,10 +63,24 @@ ul {
     display: none;
   }
 }
+// CLIENTS LOGO SECTION //
+.logo-block {
+  text-align: center;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.logo-item {
+  padding: 20px;
+  img {
+    max-width: 350px;
+  }
+}
 .footer {
   color: $light-color;
   background-color: $primary-color;
-  
+
   width: 100%;
 
   .footer-iconlink {

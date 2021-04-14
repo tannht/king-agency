@@ -1,3 +1,12 @@
+@charset "UTF-8";
+/* Mixin */
+/* Set các giá trị với màn hình tương ứng */
+p {
+  font-size: 1rem; }
+  @media (max-width: 479px) {
+    p {
+      font-size: 12px; } }
+
 ul {
   list-style: none; }
 
@@ -5,8 +14,12 @@ ul {
   display: none !important;
   duration: 3s; }
 
+.header-section {
+  position: fixed;
+  z-index: 999;
+  width: 100%; }
+
 .navbar {
-  display: flex;
   justify-content: space-between;
   height: 103px;
   padding: 10px; }
@@ -21,6 +34,17 @@ ul {
 
 .NavButtonModal .ant-modal-footer {
   display: none; }
+
+.logo-block {
+  text-align: center; }
+  .logo-block ul {
+    display: flex;
+    flex-wrap: wrap; }
+
+.logo-item {
+  padding: 20px; }
+  .logo-item img {
+    max-width: 350px; }
 
 .footer {
   color: #fff;

@@ -1,6 +1,11 @@
 $primary-color: #001d26;
 $secondary-color: #4099f1;
 $light-color: #fff;
+
+//-------FONT SETTING-----/
+$menu-fontsize: 46px;
+$submenu-fontsize: 38px;
+
 /* Mixin */
 /* Set các giá trị với màn hình tương ứng */
 $mobile-width: 480px;
@@ -23,11 +28,11 @@ $desktop-width: 1024px;
   @media (min-width: #{$desktop-width}) {
   }
 }
-p{
+p {
   font-size: 1rem;
-  @include mobile {     
-    font-size: 12px;   
-   }    
+  @include mobile {
+    font-size: 12px;
+  }
 }
 
 ul {
@@ -41,17 +46,25 @@ ul {
   position: fixed;
   z-index: 999;
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.267);
 }
 .navbar {
-  justify-content: space-between;
-  height: 103px;
+  height: 90px;
   padding: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
   .logo {
-    width: 146.38px;
+    width: 140px;
+    @include mobile {
+      width: 100px;
+    }
   }
   ul {
-    display: flex;
-    width: 65%;
+    @include mobile {
+      display: none;
+    }
+    margin-left: 55%;
+    width: 18%;
     justify-content: space-between;
     a {
       text-decoration: none;
@@ -59,22 +72,72 @@ ul {
   }
 }
 .NavButtonModal {
+  @include mobile {
+    margin: 0 !important;
+  }
+  align-items: center;
+  .ant-modal-close-x {
+    //position: relative;
+
+    color: #fff;
+    font-size: 30px;
+  }
+
+  background-color: $primary-color;
+  padding-bottom: 0;
+  top: 0 !important;
+  //height:100%!important;
+  // position:absolute;
+  min-width: 100% !important;
+
+  height: 100%;
+  .ant-modal-content {
+    background-color: transparent;
+  }
+
   .ant-modal-footer {
     display: none;
   }
 }
+
+.main-menu {
+  margin-left: 40%;
+  margin-top: 10%;
+  font-size: $menu-fontsize;
+  font-weight: 700;
+  @include mobile {
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+}
+.sub-menu {
+  font-size: $submenu-fontsize;
+}
+
 // CLIENTS LOGO SECTION //
 .logo-block {
+  max-width: 100%;
   text-align: center;
+  margin: 0 auto;
   ul {
     display: flex;
     flex-wrap: wrap;
+    padding:0;
   }
-}
-.logo-item {
-  padding: 20px;
-  img {
-    max-width: 350px;
+  .logo-item {
+    padding: 20px;
+    @include mobile {
+      padding: 5px;
+    }
+    img {
+      max-width: 350px;
+      @include mobile {
+        max-width: 120px;
+      }
+    }
   }
 }
 .footer {

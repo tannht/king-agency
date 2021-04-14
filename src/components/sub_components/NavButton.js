@@ -21,8 +21,9 @@ function NavButton() {
       <Button type="primary" onClick={showModal}>
       <i className="fas fa-bars"></i>
       </Button>
+      
       <Modal className="NavButtonModal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-       <Menu/>
+       <Menu className="MenuStyle"></Menu>
       </Modal>
     </>
   );

@@ -37,6 +37,10 @@ ul {
     @media (max-width: 479px) {
       .navbar ul {
         display: none; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .navbar ul {
+        margin-left: 25%;
+        width: 30%; } }
     .navbar ul a {
       text-decoration: none; }
 
@@ -121,5 +125,4 @@ ul {
     text-decoration: none; }
   .bottom-bar .bottom-right {
     display: flex;
-    width: 20%;
     justify-content: space-between; }

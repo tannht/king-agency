@@ -5,7 +5,7 @@ import React from "react";
 function Logo() {
   return (
     <div className="logo">
-      <img alt='' src="assets/images/logo.svg"></img>
+      <img alt="" src="assets/images/logo.svg"></img>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import {  Button  } from 'antd';
+
 
 function ProjectList() {  
   return (
@@ -24,7 +24,7 @@ function ProjectList() {
               
               {/* -----------Project Item -----------*/}
               <NavLink to="#" className="btn btn-primary">
-                Go somewhere
+                View more
               </NavLink>
             </div>
           </div>
@@ -44,7 +44,7 @@ function ProjectList() {
               
               {/* -----------Project Item -----------*/}
               <NavLink to="#" className="btn btn-primary">
-                Go somewhere
+                View more
               </NavLink>
             </div>
           </div><div className="col-6">
@@ -63,7 +63,7 @@ function ProjectList() {
               
               {/* -----------Project Item -----------*/}
               <NavLink to="#" className="btn btn-primary">
-                Go somewhere
+                View more
               </NavLink>
             </div>
           </div><div className="col-6">
@@ -82,7 +82,7 @@ function ProjectList() {
               
               {/* -----------Project Item -----------*/}
               <NavLink to="#" className="btn btn-primary">
-                Go somewhere
+                View more
               </NavLink>
             </div>
           </div>
@@ -102,7 +102,7 @@ function ProjectList() {
               
               {/* -----------Project Item -----------*/}
               <NavLink to="#" className="btn btn-primary">
-                Go somewhere
+                View more
               </NavLink>
             </div>
           </div>
@@ -122,7 +122,7 @@ function ProjectList() {
               
               {/* -----------Project Item -----------*/}
               <NavLink to="#" className="btn btn-primary">
-                Go somewhere
+                View more
               </NavLink>
             </div>
           </div>
@@ -143,7 +143,7 @@ function ProjectList() {
               
               {/* -----------Project Item -----------*/}
               <NavLink to="#" className="btn btn-primary">
-                Go somewhere
+                View more
               </NavLink>
             </div>
           </div>
@@ -163,11 +163,11 @@ function ProjectList() {
               
               {/* -----------Project Item -----------*/}
               <NavLink to="#" className="btn btn-primary">
-                Go somewhere
+                View more
               </NavLink>
             </div>
           </div>
-          <button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
+          
         </div>
       </div>
     </div>

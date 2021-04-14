@@ -18,6 +18,7 @@ function NavButton() {
 
   return (
     <>
+    
       <Button type="primary" onClick={showModal}>
       <i className="fas fa-bars"></i>
       </Button>

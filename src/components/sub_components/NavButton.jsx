@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import Menu from './Menu';
-import  {  Modal, Button  } from 'antd';
+import React, { useState } from "react";
+import Menu from "./Menu";
+import { Modal, Button } from "antd";
 
 function NavButton() {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -17,17 +17,21 @@ function NavButton() {
   };
 
   return (
-    <>
-    
-      <Button type="primary" onClick={showModal}>
-      <i className="fas fa-bars"></i>
+    <div>
+      <Button className="menu-collapse" type="primary" onClick={showModal}>
+        <i className="fas fa-bars fa-2x"></i>
       </Button>
-      
-      <Modal className="NavButtonModal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-       <Menu className="MenuStyle"></Menu>
+
+      <Modal
+        className="NavButtonModal"
+        visible={isModalVisible}
+        onOk={handleOk}
+        onCancel={handleCancel}
+      >
+        <Menu className="MenuStyle"></Menu>
       </Modal>
-    </>
+    </div>
   );
-  }
+}
 
 export default NavButton;

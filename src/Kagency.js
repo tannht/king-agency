@@ -1,25 +1,20 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Home from "./components/Home";
-import AboutUs from "./components/AboutUs";
-import OurWork from "./components/OurWork";
-import Projects from "./components/Projects";
-import Blog from "./components/Blog";
-import ContactUs from "./components/ContactUs";
-import PrivacyPolicy from "./components/PrivacyPolicy";
-import { BackTop } from 'antd';
+import Home from "./pages/home/Home";
+import AboutUs from "./pages/about_us/AboutUs";
+import OurWork from "./pages/our_work/OurWork";
+import Projects from "./pages/projects/Projects";
+import Blog from "./pages/blog/Blog";
+import Contact from "./pages/contact/Contact";
+import PrivacyPolicy from "./pages/privacy_policy/PrivacyPolicy";
+import { BackTop } from "antd";
 
 function Kagency() {
   return (
     <div>
       <Router>
-     
         <Header />
         <Switch>
           <Route path="/" exact>
@@ -38,7 +33,7 @@ function Kagency() {
             <Blog />
           </Route>
           <Route path="/contact-us">
-            <ContactUs />
+            <Contact />
           </Route>
           <Route path="/privacy-policy">
             <PrivacyPolicy />

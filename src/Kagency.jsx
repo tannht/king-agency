@@ -12,7 +12,7 @@ import PrivacyPolicy from "./pages/privacy_policy/PrivacyPolicy";
 import { BackTop } from "antd";
 
 const Kagency = () => (
-  <div className="container">
+  <div>
     <Router>
       <Header />
       <Switch>

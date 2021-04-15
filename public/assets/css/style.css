@@ -12,8 +12,7 @@ ul {
 
 .hide {
   display: none !important;
-  duration: 3s; 
-}
+  duration: 3s; }
 
 .header-section {
   position: fixed;

@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 import NavButton from "./sub_components/NavButton";
+import "./Header.scss";
 
 function Header() {
   return (

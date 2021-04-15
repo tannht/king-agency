@@ -5,7 +5,7 @@ import News from "./components/News";
 import "./Home.scss";
 function Home() {
   return (
-    <div className="Home">
+    <div className="Home container">
       <Banner />
       <Projects />
       <News />

@@ -13,7 +13,7 @@ const News = () => (
             src="https://image.shutterstock.com/image-photo/businessman-showing-computer-screen-coworkers-600w-491401522.jpg"
             className="card-img-top"
           />
-          <div Name="card-body">
+          <div className="card-body">
             <h5 className="card-title">Card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
@@ -32,7 +32,7 @@ const News = () => (
             src="https://image.shutterstock.com/image-photo/businessman-showing-computer-screen-coworkers-600w-491401522.jpg"
             className="card-img-top"
           />
-          <div Name="card-body">
+          <div className="card-body">
             <h5 className="card-title">Card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
@@ -51,7 +51,7 @@ const News = () => (
             src="https://image.shutterstock.com/image-photo/businessman-showing-computer-screen-coworkers-600w-491401522.jpg"
             className="card-img-top"
           />
-          <div Name="card-body">
+          <div className="card-body">
             <h5 className="card-title">Card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
@@ -70,7 +70,7 @@ const News = () => (
             src="https://image.shutterstock.com/image-photo/businessman-showing-computer-screen-coworkers-600w-491401522.jpg"
             className="card-img-top"
           />
-          <div Name="card-body">
+          <div className="card-body">
             <h5 className="card-title">Card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
@@ -78,7 +78,7 @@ const News = () => (
             </p>
           </div>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg">
+        <button type="button" className="btn btn-outline-primary btn-lg">
           Primary
         </button>
       </div>

@@ -1,10 +1,8 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import "./Projects.scss";
 
 const Projects = () => (
-  <div>
-    <div className="container">
-      <div className="row">
+      <div className="Projects row">
         <div className="col-6 project-item">
           <img
             src="https://image.shutterstock.com/image-photo/businessman-showing-computer-screen-coworkers-600w-491401522.jpg"
@@ -143,8 +141,6 @@ const Projects = () => (
           </div>
         </div>
       </div>
-    </div>
-  </div>
 );
 
 export default Projects;

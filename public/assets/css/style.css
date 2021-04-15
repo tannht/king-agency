@@ -12,13 +12,8 @@ ul {
 
 .hide {
   display: none !important;
-  duration: 3s; }
-
-.header-section {
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.267); }
+  duration: 3s; 
+}
 
 .navbar {
   height: 90px;

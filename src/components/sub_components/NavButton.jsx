@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Menu from "./Menu";
 import { Modal, Button } from "antd";
 
-function NavButton() {
+const NavButton = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const showModal = () => {
     setIsModalVisible(true);
@@ -18,7 +18,7 @@ function NavButton() {
 
   return (
     <div>
-      <Button className="menu-collapse" type="primary" onClick={showModal}>
+      <Button className="menu-collapse" onClick={showModal}>
         <i className="fas fa-bars fa-2x"></i>
       </Button>
 

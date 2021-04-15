@@ -5,7 +5,7 @@ const Projects = () => (
   <div>
     <div className="container">
       <div className="row">
-        <div className="col-6">
+        <div className="col-6 project-item">
           <img
             src="https://image.shutterstock.com/image-photo/businessman-showing-computer-screen-coworkers-600w-491401522.jpg"
             className="card-img-top"
@@ -19,12 +19,10 @@ const Projects = () => (
             </p>
 
             {/* -----------Project Item -----------*/}
-            <NavLink to="#" className="btn btn-primary">
-              View more
-            </NavLink>
+            
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-6 project-item">
           <img
             src="https://image.shutterstock.com/image-photo/businessman-showing-computer-screen-coworkers-600w-491401522.jpg"
             className="card-img-top"
@@ -38,12 +36,10 @@ const Projects = () => (
             </p>
 
             {/* -----------Project Item -----------*/}
-            <NavLink to="#" className="btn btn-primary">
-              View more
-            </NavLink>
+           
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-6 project-item">
           <img
             src="https://image.shutterstock.com/image-photo/businessman-showing-computer-screen-coworkers-600w-491401522.jpg"
             className="card-img-top"
@@ -57,12 +53,10 @@ const Projects = () => (
             </p>
 
             {/* -----------Project Item -----------*/}
-            <NavLink to="#" className="btn btn-primary">
-              View more
-            </NavLink>
+            
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-6 project-item">
           <img
             src="https://image.shutterstock.com/image-photo/businessman-showing-computer-screen-coworkers-600w-491401522.jpg"
             className="card-img-top"
@@ -76,12 +70,10 @@ const Projects = () => (
             </p>
 
             {/* -----------Project Item -----------*/}
-            <NavLink to="#" className="btn btn-primary">
-              View more
-            </NavLink>
+            
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-6 project-item">
           <img
             src="https://image.shutterstock.com/image-photo/businessman-showing-computer-screen-coworkers-600w-491401522.jpg"
             className="card-img-top"
@@ -95,12 +87,10 @@ const Projects = () => (
             </p>
 
             {/* -----------Project Item -----------*/}
-            <NavLink to="#" className="btn btn-primary">
-              View more
-            </NavLink>
+            
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-6 project-item">
           <img
             src="https://image.shutterstock.com/image-photo/businessman-showing-computer-screen-coworkers-600w-491401522.jpg"
             className="card-img-top"
@@ -114,13 +104,11 @@ const Projects = () => (
             </p>
 
             {/* -----------Project Item -----------*/}
-            <NavLink to="#" className="btn btn-primary">
-              View more
-            </NavLink>
+          
           </div>
         </div>
 
-        <div className="col-6">
+        <div className="col-6 project-item">
           <img
             src="https://image.shutterstock.com/image-photo/businessman-showing-computer-screen-coworkers-600w-491401522.jpg"
             className="card-img-top"
@@ -134,12 +122,10 @@ const Projects = () => (
             </p>
 
             {/* -----------Project Item -----------*/}
-            <NavLink to="#" className="btn btn-primary">
-              View more
-            </NavLink>
+            
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-6 project-item">
           <img
             src="https://image.shutterstock.com/image-photo/businessman-showing-computer-screen-coworkers-600w-491401522.jpg"
             className="card-img-top"
@@ -153,9 +139,7 @@ const Projects = () => (
             </p>
 
             {/* -----------Project Item -----------*/}
-            <NavLink to="#" className="btn btn-primary">
-              View more
-            </NavLink>
+           
           </div>
         </div>
       </div>

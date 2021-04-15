@@ -4,6 +4,7 @@ import './index.css';
 import Kagency from './Kagency';
 import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.css';
+import './index.css'
 ReactDOM.render(
   <React.StrictMode>
     <Kagency/>

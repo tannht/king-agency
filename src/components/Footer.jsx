@@ -4,7 +4,7 @@ import SubMenu from "./sub_components/SubMenu";
 function Footer() {
   return (
     <div className="footer">
-      <div className="row footer-content">
+      <div className="row footer-content justify-content-center">
         <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
           {/* INFO */}
           <h3>Contact Us</h3>

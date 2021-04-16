@@ -40,7 +40,7 @@ function Footer() {
       <div className="row">
         <div className="col-12 container">
           <div className="bottom-bar">
-            <div className="bottom-left">Copyright©2020. KAGENCY Co.Ltd</div>
+            <div className="bottom-left">Copyright©2021. KAGENCY Co.Ltd</div>
             <div className="bottom-right">
               <NavLink to="/privacy-policy">Privacy Policy</NavLink>
               <NavLink to="#">Terms and Conditions</NavLink>

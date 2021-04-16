@@ -1,0 +1,48 @@
+.Projects {
+  padding: 5em 5em;
+  background-color: #001d26;
+  .card-body {
+    padding-left: 0;
+  }
+  .odd-col {
+    h4 {
+      color: lightblue;
+    }
+    h3 {
+      color: dodgerblue;
+    }
+    p {
+      color: lightblue;
+    }
+  }
+
+  .even-col {
+    h4 {
+      color: lightblue;
+    }
+    h3 {
+      color: dodgerblue;
+    }
+    p {
+      color: lightblue;
+    }
+  }
+
+  .tags {
+    padding-top: 1em;
+    .project-tag {
+      color: dodgerblue;
+      text-transform: uppercase;
+      font-size: 12px;
+      padding-right: 1em;
+    }
+  }
+  .more-prjects{
+    padding-top: 2em;
+    text-align: center;
+    button {
+      color: white;
+      border-color: white;
+    }
+  }
+}

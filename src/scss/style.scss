@@ -148,13 +148,31 @@ ul {
 .footer {
   color: $light-color;
   background-color: $primary-color;
-
-  width: 100%;
+  .footer-content {
+    padding: 2em 0;
+    margin: auto;
+    h3 {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+  }
+  .footer-info {
+    width: 70%;
+    ul {
+      padding-left: 0;
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
 
   .footer-iconlink {
-    width: 50%;
     display: flex;
     margin: 0 auto;
+    i {
+      color: #fff;
+    }
     .icon {
       border: 1px solid $light-color;
       border-radius: 50%;
@@ -162,6 +180,18 @@ ul {
       margin: 10px 15px;
       width: 40px;
       height: 40px;
+      color: #fff;
+    }
+    .icon:nth-child(1) {
+      margin-left: 0;
+    }
+  }
+
+  .footer-servicelink {
+    a {
+      color: #aaa;
+      padding-bottom: 0.4em;
+      font-weight: bold;
     }
   }
 }
@@ -180,7 +210,6 @@ ul {
 
   .bottom-right {
     display: flex;
-    
     justify-content: space-between;
   }
 }

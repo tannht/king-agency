@@ -22,7 +22,9 @@ const NewsItem = ({ url, tags, title, description }) => {
                     <div className="card-description">
                     {description}
                     </div>
-                      <NavLink to="#" className="read-more">Read More <i class="fa fa-caret-right" aria-hidden="true"></i></NavLink>
+                      <div className="read-more">
+                      <NavLink to="#" >Read More <i className="fa fa-caret-right" aria-hidden="true"></i></NavLink>
+                      </div>
                 </div>
             </div>
         </div>

@@ -7,7 +7,7 @@ import "./Home.scss";
 import ClientsLogo from "../../components/ClientsLogo";
 function Home() {
   return (
-    <div className="Home container">
+    <div className="Home">
       <Banner />
       <Info />
       <Projects />

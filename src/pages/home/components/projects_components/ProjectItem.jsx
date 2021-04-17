@@ -1,3 +1,5 @@
+import "./ProjectItem.scss";
+
 const ProjectItem = ({url, tags, title, description}) => {
     const RenderTags = () => {
         return tags.map((item, index) => (

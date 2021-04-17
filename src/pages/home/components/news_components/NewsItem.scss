@@ -32,6 +32,11 @@
         -webkit-box-orient: vertical;
     }
     .read-more{
-        justify-content: end;
+        text-align: end;
+        padding: 1em 0 1em 1em;
+        svg {
+            margin-left: 0.2em;
+            height: 12px;
+        }
     }
 }

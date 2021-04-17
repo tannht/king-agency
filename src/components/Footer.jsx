@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="footer">
       <div className="row footer-content">
-        <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+        <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
           {/* INFO */}
           <h3>Contact Us</h3>
           <div className="footer-info">
@@ -15,23 +15,24 @@ function Footer() {
                 <i className="fas fa-phone" /> 0908 999 999
               </li>
               <li>
-                <i className="far fa-envelope" /> info@kagency.com
+                <i className="far fa-paper-plane" /> info@kagency.com
               </li>
             </ul>
           </div>
         </div>
-        <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 footer-social">
+        <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-social">
           <h3>Social Link</h3>
           <div className="footer-fanpage">
             <img src="assets/images/logo.svg" height={50} alt=""></img>
           </div>
           <div className="footer-iconlink">
-              <i className="fa fa-bars icon" aria-hidden="true"></i>
-              <i className="fa fa-bars icon" aria-hidden="true"></i>
-              <i className="fa fa-bars icon" aria-hidden="true"></i>
+              <img src="./assets/images/icons/yt_light.svg" alt=""/>
+              <img src="./assets/images/icons/pin_light.svg" alt=""/>
+              <img src="./assets/images/icons/ins_light.svg" alt=""/>
+              <img src="./assets/images/icons/inl_light.svg" alt=""/>
           </div>
         </div>
-        <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 footer-servicelink">
+        <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-servicelink">
           {/* SERVICE LINKS */}
           {/*sub menu */}
           <SubMenu />

@@ -149,7 +149,7 @@ ul {
   color: $light-color;
   background-color: $primary-color;
   .footer-content {
-    padding: 2em 0;
+    padding: 2em 5em;
     margin: auto;
     h3 {
       color: #fff;
@@ -158,21 +158,20 @@ ul {
     }
   }
   .footer-info {
-    width: 70%;
+    padding-bottom: 2em;
     ul {
       padding-left: 0;
-      i {
-        margin-right: 10px;
+      svg {
+        margin-right: 0.3em;
       }
     }
   }
 
   .footer-iconlink {
+    padding-bottom: 2em;
+
     display: flex;
     margin: 0 auto;
-    i {
-      color: #fff;
-    }
     .icon {
       border: 1px solid $light-color;
       border-radius: 50%;
@@ -185,12 +184,20 @@ ul {
     .icon:nth-child(1) {
       margin-left: 0;
     }
+    img {
+      height: 40px;
+      margin: 8px 10px;
+    }
+    img:nth-child(1) {
+      margin-left: 0;
+    }
   }
 
   .footer-servicelink {
     a {
       color: #aaa;
       padding-bottom: 0.4em;
+      font-size: 18px;
       font-weight: bold;
     }
   }

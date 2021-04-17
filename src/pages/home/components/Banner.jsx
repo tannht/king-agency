@@ -2,7 +2,7 @@ import React from "react";
 import "./Banner.scss";
 
 const Banner = () => (
-  <div className="Banner">
+  <div className="Banner container">
     <div className="title">
       <p>Stock is Digital Market Agency</p>
       <h1>

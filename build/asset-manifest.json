@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7617f1e8.chunk.css",
+    "main.js": "/static/js/main.827eb502.chunk.js",
+    "main.js.map": "/static/js/main.827eb502.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.37d8111d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.37d8111d.js.map",
+    "static/css/2.558413a2.chunk.css": "/static/css/2.558413a2.chunk.css",
+    "static/js/2.34460980.chunk.js": "/static/js/2.34460980.chunk.js",
+    "static/js/2.34460980.chunk.js.map": "/static/js/2.34460980.chunk.js.map",
+    "static/js/3.492f2492.chunk.js": "/static/js/3.492f2492.chunk.js",
+    "static/js/3.492f2492.chunk.js.map": "/static/js/3.492f2492.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.558413a2.chunk.css.map": "/static/css/2.558413a2.chunk.css.map",
+    "static/css/main.7617f1e8.chunk.css.map": "/static/css/main.7617f1e8.chunk.css.map",
+    "static/js/2.34460980.chunk.js.LICENSE.txt": "/static/js/2.34460980.chunk.js.LICENSE.txt",
+    "static/media/Info.scss": "/static/media/info_2.10b316a0.png",
+    "static/media/Banner.scss": "/static/media/teamwork.ba52d243.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.37d8111d.js",
+    "static/css/2.558413a2.chunk.css",
+    "static/js/2.34460980.chunk.js",
+    "static/css/main.7617f1e8.chunk.css",
+    "static/js/main.827eb502.chunk.js"
+  ]
+}

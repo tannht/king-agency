@@ -1,5 +1,9 @@
 .Info {
   padding-bottom: 5em;
+  background: url("../../../assets/images/dot_wage.png");
+  background-size: auto;
+  background-position: right; /* Center the image */
+  background-repeat: no-repeat;
 }
 
 .padding{
@@ -44,6 +48,14 @@
     line-height: 1.2;
     padding-bottom: 1em;
     text-transform: uppercase;
+  }
+  a {
+    color: gray;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .NavLink {
+    padding-bottom: 2em;
   }
 }
 

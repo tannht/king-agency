@@ -1,11 +1,12 @@
-$banner-height: 32em;
+$banner-height: 50em;
 
 .Banner {
   height: $banner-height;
   padding: 10px;
   font-family: sans-serif;
-  background: url("../../../assets/images/teamwork.png");
-  background-size: contain;
+  background: url("../../../assets/images/dot_wage.png"), url("../../../assets/images/home_banner.png");
+  background-size: auto;
+  background-position: right; /* Center the image */
   background-repeat: no-repeat;
   .title {
     height: $banner-height;

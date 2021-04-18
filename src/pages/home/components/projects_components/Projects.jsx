@@ -4,9 +4,13 @@ import ProjectsEvenColumn from "./ProjectsEvenColumn";
 import ProjectsOddColumn from "./ProjectsOddColumn";
 
 const Projects = () => (
-  <div className="Projects row">
-    <ProjectsOddColumn />
-    <ProjectsEvenColumn />
+  <div className="Projects">
+    <div className="container">
+      <div className="row">
+        <ProjectsOddColumn />
+        <ProjectsEvenColumn />
+      </div>
+    </div>
   </div>
 );
 

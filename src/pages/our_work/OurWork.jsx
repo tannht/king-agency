@@ -1,6 +1,7 @@
 import React from "react";
 import PageDescription from "../../components/PageDescription";
 import ServiceItem from "./components/ServiceItem";
+import ClientsLogo from "../../components/ClientsLogo";
 import "./OurWork.scss";
 
 const OurWork = () => (
@@ -75,6 +76,7 @@ const OurWork = () => (
         reverse={true}
       />
     </div>
+    <ClientsLogo />
   </div>
 );
 

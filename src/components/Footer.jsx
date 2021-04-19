@@ -26,10 +26,10 @@ function Footer() {
             <img src="assets/images/logo.svg" height={50} alt=""></img>
           </div>
           <div className="footer-iconlink">
-              <img src="./assets/images/icons/yt_light.svg" alt=""/>
-              <img src="./assets/images/icons/pin_light.svg" alt=""/>
-              <img src="./assets/images/icons/ins_light.svg" alt=""/>
-              <img src="./assets/images/icons/inl_light.svg" alt=""/>
+            <img src="./assets/images/icons/yt_light.svg" alt="" />
+            <img src="./assets/images/icons/pin_light.svg" alt="" />
+            <img src="./assets/images/icons/ins_light.svg" alt="" />
+            <img src="./assets/images/icons/inl_light.svg" alt="" />
           </div>
         </div>
         <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-servicelink">
@@ -38,13 +38,20 @@ function Footer() {
           <SubMenu />
         </div>
       </div>
-      <div className="row">
-        <div className="col-12 container">
-          <div className="bottom-bar">
-            <div className="bottom-left">Copyright©2021. KAGENCY Co.Ltd</div>
-            <div className="bottom-right">
-              <NavLink to="/privacy-policy">Privacy Policy</NavLink>
-              <NavLink to="#">Terms and Conditions</NavLink>
+
+      <div className="bottom-bar">
+        <div className="container copyright">
+          <div className="row">
+            <div className="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"><p>Copyright©2021. KAGENCY Co.Ltd</p></div>
+            <div className="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <ul>
+                <li>
+                  <NavLink to="/privacy-policy">Privacy Policy</NavLink>
+                </li>
+                <li>
+                  <NavLink to="#">Terms and Conditions</NavLink>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

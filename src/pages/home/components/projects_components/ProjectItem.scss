@@ -1,20 +1,23 @@
-.tags {
+.ProjectItem {
+  padding-bottom: 2em;
+  .tags {
     padding-top: 1em;
 
     .project-tag {
-        color: dodgerblue;
-        text-transform: uppercase;
-        font-size: 12px;
-        padding-right: 1em;
+      color: dodgerblue;
+      text-transform: uppercase;
+      font-size: 12px;
+      padding-right: 1em;
     }
+  }
 }
 
 .more-prjects {
-    padding-top: 2em;
-    text-align: center;
+  padding-top: 2em;
+  text-align: center;
 
-    button {
-        color: white;
-        border-color: white;
-    }
+  button {
+    color: white;
+    border-color: white;
+  }
 }

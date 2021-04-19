@@ -143,11 +143,25 @@ ul {
   width: 100%;
   display: flex;
   background-color: #4099f1;
-  padding: 20px;
+  padding: 20px 20px 0 0;
   justify-content: space-between; }
   .bottom-bar a {
     color: white;
     text-decoration: none; }
-  .bottom-bar .bottom-right {
-    display: flex;
-    justify-content: space-between; }
+  .bottom-bar .copyright {
+    margin: 0 8vh !important; }
+    .bottom-bar .copyright ul {
+      padding: 0;
+      position: absolute;
+      right: 16px; }
+    .bottom-bar .copyright li {
+      display: inline;
+      padding-right: 5em; }
+    .bottom-bar .copyright .col-6:nth-child(1) {
+      justify-content: end; }
+
+@media (max-width: 671px) {
+  .bottom-bar .copyright ul {
+    position: static; }
+  .bottom-bar .copyright li {
+    display: list-item; } }

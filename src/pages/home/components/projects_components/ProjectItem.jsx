@@ -8,7 +8,7 @@ const ProjectItem = ({url, tags, title, description}) => {
     }
 
     return (
-        <div className="project-item">
+        <div className="ProjectItem">
           <img
             src={url}
             className="card-img-top"

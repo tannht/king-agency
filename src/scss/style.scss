@@ -207,16 +207,38 @@ ul {
   width: 100%;
   display: flex;
   background-color: $secondary-color;
-  padding: 20px;
+  padding: 20px 20px 0 0;
   justify-content: space-between;
-
   a {
     color: white;
     text-decoration: none;
   }
+  .copyright {
+    margin: 0 8vh !important;
+    ul {
+      padding: 0;
+      position: absolute;
+      right: 16px;
+    }
+    li {
+      display: inline;
+      padding-right: 5em;
+    }
+    .col-6:nth-child(1) {
+      justify-content: end;
+    }
+  }
+}
 
-  .bottom-right {
-    display: flex;
-    justify-content: space-between;
+@media (max-width: 671px) {
+  .bottom-bar {
+    .copyright {
+      ul {
+        position: static;
+      }
+      li {
+        display: list-item;
+      }
+    }
   }
 }

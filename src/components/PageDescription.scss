@@ -1,15 +1,12 @@
 .PageDescription {
-  height: 50em;
+  height: 40em;
   display: flex;
   align-items: center;
-  justify-content: center;
   text-align: center;
   .title {
-    width: 70%;
-    padding: 0 5em;
     margin: auto;
     h1 {
-      font-size: 85px;
+      font-size: 130px;
       text-transform: uppercase;
       font-weight: 500;
       color: teal;
@@ -23,7 +20,7 @@
       color: gray;
     }
     p {
-      font-size: 14px;
+      font-size: 16px;
       color: black;
     }
   }

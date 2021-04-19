@@ -1,7 +1,10 @@
-.Projects {
+.ProjectsComponent {
   margin: auto;
-  padding: 5em 5em;
-  background-color: #001d26;
+  padding: 0 5em;
+  .reverse-row {
+    display: flex;
+    flex-direction: row-reverse;
+  }
   .card-body {
     padding-left: 0;
   }

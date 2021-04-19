@@ -2,28 +2,8 @@
 
 .Home {
   margin: auto;
-}
-.project-item {
-    margin: 0 auto;
-  background-color: $primary-color;
-  p,
-  h5 {
-    color: $light-color;
+  .projects-component {
+    background-color: #001d26;
+    padding: 5em 0;
   }
-}
-.project-itmes:nth-child(1),
-.project-itmes:nth-child(3),
-.project-itmes:nth-child(5),
-.project-itmes:nth-child(7) {
-    img {
-        max-width: 80%;
-    }
-}
-.project-itmes:nth-child(2),
-.project-itmes:nth-child(4),
-.project-itmes:nth-child(6),
-.project-itmes:nth-child(8) {
-    img {
-        max-width: 50%;
-    }
 }

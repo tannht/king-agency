@@ -1,10 +1,6 @@
 import "./PageDescription.scss";
 
 const PageDescription = ({ title, titleContent, content }) => {
-  const TitleRender = () => {
-    let strArr = title.split(" ");
-    console.log(strArr);
-  }
   return (
     <div className="PageDescription">
       <div className="container">

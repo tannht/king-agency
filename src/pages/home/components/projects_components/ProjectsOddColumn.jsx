@@ -1,21 +1,8 @@
 import ProjectItem from "./ProjectItem";
 
-const ProjectsOddColumn = () => (
+const ProjectsOddColumn = ({ headerComponent }) => (
   <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 odd-col">
-    <div className="col-12">
-      <h4>Projects</h4>
-      <h3>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </h3>
-      <p>
-        It has survived not only five centuries, but also the leap into
-        electronic typesetting, remaining essentially unchanged. It was
-        popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and more recently with desktop publishing software
-        like Aldus PageMaker including versions of Lorem Ipsum.
-      </p>
-    </div>
+    <div className="col-12">{headerComponent}</div>
     <ProjectItem
       url={"https://i.imgur.com/3nhGLsk.jpeg"}
       tags={["Branding", "Strategy", "Digital Marketing"]}

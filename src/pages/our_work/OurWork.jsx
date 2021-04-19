@@ -3,6 +3,7 @@ import PageDescription from "../../components/PageDescription";
 import ServiceItem from "./components/ServiceItem";
 import ClientsLogo from "../../components/ClientsLogo";
 import "./OurWork.scss";
+import Footer from "../../components/Footer";
 
 const OurWork = () => (
   <div className="OurWork">
@@ -77,6 +78,7 @@ const OurWork = () => (
       />
     </div>
     <ClientsLogo />
+    <Footer />
   </div>
 );
 

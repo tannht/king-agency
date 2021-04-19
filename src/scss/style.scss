@@ -146,6 +146,8 @@ ul {
   }
 }
 .footer {
+  clear: both;
+  position: relative;
   color: $light-color;
   background-color: $primary-color;
   .footer-content {

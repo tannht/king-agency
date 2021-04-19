@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "./components/Banner";
+import Footer from "../../components/Footer"
 import ProjectsComponent from "../../components/projects_components/ProjectsComponent";
 import News from "./components/news_components/News";
 import Info from "./components/Info";
@@ -31,6 +32,7 @@ function Home() {
       </div>
       <ClientsLogo />
       <News />
+      <Footer />
     </div>
   );
 }

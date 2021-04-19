@@ -61,14 +61,11 @@ const ProjectsComponent = ({ headerComponent }) => {
 
   projects.map((item, index) => {
     if ((index + 1) % 2 === 0) {
-      evenProject.push(item);
+      return evenProject.push(item);
     } else {
-      oddProject.push(item);
+      return oddProject.push(item);
     }
   });
-
-  console.log(evenProject);
-  console.log(oddProject);
 
   return (
     <div className="ProjectsComponent">

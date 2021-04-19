@@ -1,9 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import SubMenu from "./sub_components/SubMenu";
-function Footer() {
-  return (
-    <div className="footer">
+
+const Footer = ({ hiddenContact = false }) => (
+  <div className="footer">
+    <div className={hiddenContact ? "d-none" : "d-block"}>
       <div className="row footer-content">
         <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
           {/* INFO */}
@@ -38,26 +39,27 @@ function Footer() {
           <SubMenu />
         </div>
       </div>
-
-      <div className="bottom-bar">
-        <div className="container copyright">
-          <div className="row">
-            <div className="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"><p>Copyright©2021. KAGENCY Co.Ltd</p></div>
-            <div className="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-              <ul>
-                <li>
-                  <NavLink to="/privacy-policy">Privacy Policy</NavLink>
-                </li>
-                <li>
-                  <NavLink to="#">Terms and Conditions</NavLink>
-                </li>
-              </ul>
-            </div>
+    </div>
+    <div className="bottom-bar">
+      <div className="container copyright">
+        <div className="row">
+          <div className="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <p>Copyright©2021. KAGENCY Co.Ltd</p>
+          </div>
+          <div className="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <ul>
+              <li>
+                <NavLink to="/privacy-policy">Privacy Policy</NavLink>
+              </li>
+              <li>
+                <NavLink to="#">Terms and Conditions</NavLink>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  );
-}
+  </div>
+);
 
 export default Footer;

@@ -3,6 +3,7 @@ import ClientsLogo from "../../components/ClientsLogo";
 import ProjectsComponent from "../../components/projects_components/ProjectsComponent";
 import PageDescription from "../../components/PageDescription";
 import "./Projects.scss";
+import Footer from "../../components/Footer";
 
 const Projects = () => {
   const HeaderComponent = () => (
@@ -28,6 +29,7 @@ const Projects = () => {
         <ProjectsComponent headerComponent={<HeaderComponent />} />
       </div>
       <ClientsLogo />
+      <Footer />
     </div>
   );
 };

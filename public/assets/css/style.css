@@ -98,6 +98,8 @@ ul {
           max-width: 120px; } }
 
 .footer {
+  clear: both;
+  position: relative;
   color: #fff;
   background-color: #001d26; }
   .footer .footer-content {

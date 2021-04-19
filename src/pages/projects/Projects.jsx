@@ -8,11 +8,11 @@ const Projects = () => {
   const HeaderComponent = () => (
     <div className="projects-header">
       <ul>
-        <li className="active">Strategy</li>
-        <li className="active">Branding</li>
+        <li>Strategy</li>
+        <li>Branding</li>
         <li className="active">Digital Marketing</li>
         <li>
-          <i class="fa fa-plus fa-lg" aria-hidden="true"></i>
+          <i className="fa fa-plus fa-lg" aria-hidden="true"></i>
         </li>
       </ul>
     </div>

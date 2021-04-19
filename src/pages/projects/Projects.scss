@@ -1,6 +1,6 @@
 .Projects {
   margin: auto;
-  padding: 5em 5em;
+  padding: 5em 0;
   .ProjectsComponent .odd-col p {
     color: black;
   }
@@ -20,7 +20,6 @@
     background-repeat: no-repeat;
   }
   .projects-header {
-   
     li {
       display: inline-block;
       margin: 1em;
@@ -33,6 +32,30 @@
     li.active {
       color: royalblue;
       border: 1px solid royalblue;
+    }
+  }
+}
+
+@media (max-width: 671px) {
+  .Projects {
+    .projects-header {
+      ul {
+        padding: 0;
+      }
+      li {
+        display: inline-block;
+        margin: 0.4em;
+        padding: 0 0.3em;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: gray;
+        font-size: 12px;
+      }
+      li.active {
+        color: royalblue;
+        border: 1px solid royalblue;
+      }
     }
   }
 }

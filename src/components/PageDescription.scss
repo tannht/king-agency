@@ -1,0 +1,42 @@
+.PageDescription {
+  height: 50em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  .title {
+    width: 70%;
+    padding: 0 5em;
+    margin: auto;
+    h1 {
+      font-size: 85px;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: teal;
+    }
+  }
+  .content {
+    text-align: left;
+    padding: 0 5em;
+    font-weight: 500;
+    h3 {
+      color: gray;
+    }
+    p {
+      font-size: 14px;
+      color: black;
+    }
+  }
+}
+
+@media (max-width: 671px) {
+  .PageDescription {
+    .title {
+      width: 100%;
+      padding: 0;
+      h1 {
+        font-size: 65px;
+      }
+    }
+  }
+}

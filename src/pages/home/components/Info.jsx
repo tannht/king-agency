@@ -22,7 +22,7 @@ const Info = () => (
       </div>
     </div>
     <div className="padding"></div>
-    <div className="row">
+    <div className="row info-rows">
       <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info">
         <h4>Our Work</h4>
         <h3>It is a long established fact that a bla bla bla ...</h3>

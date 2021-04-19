@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
 }
 
-.padding{
+.padding {
   padding-bottom: 2em;
 }
 
@@ -59,3 +59,9 @@
   }
 }
 
+@media (max-width: 671px) {
+  .info-rows {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

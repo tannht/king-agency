@@ -1,0 +1,31 @@
+.ServiceItem {
+    padding-bottom: 2em;
+  .reverse-col {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .service-image {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .service-content {
+    margin: auto;
+    width: 80%;
+    padding: 5em 0;
+    h1 {
+      color: teal;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 671px) {
+  .ServiceItem {
+    .service-content {
+      margin: auto;
+      width: 90%;
+      padding: 2em 0;
+    }
+  }
+}

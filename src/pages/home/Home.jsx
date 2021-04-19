@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "./components/Banner";
-import ProjectsComponent from "./components/projects_components/ProjectsComponent";
+import ProjectsComponent from "../../components/projects_components/ProjectsComponent";
 import News from "./components/news_components/News";
 import Info from "./components/Info";
 import "./Home.scss";

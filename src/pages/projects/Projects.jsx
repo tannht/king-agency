@@ -1,6 +1,6 @@
 import React from "react";
 import ClientsLogo from "../../components/ClientsLogo";
-import ProjectsComponent from "../home/components/projects_components/ProjectsComponent";
+import ProjectsComponent from "../../components/projects_components/ProjectsComponent";
 import PageDescription from "../../components/PageDescription";
 import "./Projects.scss";
 

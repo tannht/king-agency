@@ -28,11 +28,24 @@
 
 @media (max-width: 671px) {
   .PageDescription {
+      padding-top: 2em;
     .title {
       width: 100%;
       padding: 0;
       h1 {
         font-size: 65px;
+      }
+    }
+  }
+}
+
+@media (min-width: 671px) and (max-width: 1440px) {
+  .PageDescription {
+    .title {
+      width: 100%;
+      padding: 0;
+      h1 {
+        font-size: 90px;
       }
     }
   }

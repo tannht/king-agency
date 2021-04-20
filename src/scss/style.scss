@@ -232,6 +232,11 @@ ul {
 }
 
 @media (max-width: 671px) {
+  .footer {
+    .footer-content {
+      padding: 2em;
+    }
+  }
   .bottom-bar {
     .copyright {
       ul {

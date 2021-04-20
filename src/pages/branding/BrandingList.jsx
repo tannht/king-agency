@@ -1,31 +1,31 @@
-import BlogItem from "./BlogItem";
+import BrandingItem from "./BrandingItem";
 
-const BlogList = ({ blogs = [] }) => {
-  var oddBlog = [];
-  var evenBlog = [];
+const BrandingList = ({ brandingList = [] }) => {
+  var oddBranding = [];
+  var evenBranding = [];
 
-  blogs.map((item, index) => {
+  brandingList.map((item, index) => {
     if ((index + 1) % 2 === 0) {
-      return evenBlog.push(item);
+      return oddBranding.push(item);
     } else {
-      return oddBlog.push(item);
+      return evenBranding.push(item);
     }
   });
   return (
     <div className="row">
       <div className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        {oddBlog.map((item, index) => (
-          <BlogItem key={index} blog={item} />
+        {oddBranding.map((item, index) => (
+          <BrandingItem key={index} branding={item} />
         ))}
       </div>
 
       <div className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        {evenBlog.map((item, index) => (
-          <BlogItem key={index} blog={item} />
+        {evenBranding.map((item, index) => (
+          <BrandingItem key={index} branding={item} />
         ))}
       </div>
     </div>
   );
 };
 
-export default BlogList;
+export default BrandingList;

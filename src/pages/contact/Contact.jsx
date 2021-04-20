@@ -6,7 +6,24 @@ const Contact = () => (
   <div className="Contact">
     <div className="container">
       <div className="row contact-row">
-        <div className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        <div className="col-12">
+          <div className="mapouter">
+            <div className="gmap_canvas">
+              <iframe
+                title="location"
+                className="gmap_iframe"
+                frameBorder="0"
+                scrolling="no"
+                marginHeight="0"
+                marginWidth="0"
+                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=125/2 Hoa Hung Street, Ward 12, District 10, Ho Chi Minh City&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ></iframe>
+              <Link to="https://www.fridaynightfunkin.net/"></Link>
+            </div>
+          </div>
+        </div>
+        <div className="row contact-info">
+        <div className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 address">
           <h1>KAGENCY</h1>
           <p>125/2 Hoa Hung, Ward 12, District 10, Ho Chi Minh City, Vietnam</p>
           <ul>
@@ -28,25 +45,9 @@ const Contact = () => (
             </li>
           </ul>
         </div>
-        <div className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-          <div className="mapouter">
-            <div className="gmap_canvas">
-              <iframe
-                title="location"
-                className="gmap_iframe"
-                frameBorder="0"
-                scrolling="no"
-                marginHeight="0"
-                marginWidth="0"
-                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=125/2 Hoa Hung Street, Ward 12, District 10, Ho Chi Minh City&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              ></iframe>
-              <Link to="https://www.fridaynightfunkin.net/"></Link>
-            </div>
-          </div>
-        </div>
-        <div className="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-5">
+        <div className="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
           <div className="form-contact">
-            <form action="action_page.php">
+            <form action="/">
               <div className="row">
                 <div className="col-6">
                   <input
@@ -89,6 +90,7 @@ const Contact = () => (
               <input type="submit" value="Submit" />
             </form>
           </div>
+        </div>
         </div>
       </div>
     </div>

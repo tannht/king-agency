@@ -4,6 +4,7 @@ import AboutVideo from "./components/AboutVideo";
 import AboutDescription from "./components/AboutDescription";
 import AboutImages from "./components/AboutImages";
 import ClientsLogo from "../../components/ClientsLogo";
+import OurTeam from "./components/OurTeam";
 
 
 const AboutUs = () => (
@@ -18,6 +19,7 @@ const AboutUs = () => (
       <AboutDescription />
       <AboutImages />
     </div>
+    <OurTeam />
     <ClientsLogo />
   </div>
 );

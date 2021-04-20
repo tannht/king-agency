@@ -1,7 +1,7 @@
 import "./ServiceTable.scss";
 
 const ServiceItem = ({ image, title, description }) => (
-  <div className="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div className="col-12 col-xs-12 col-sm-12col-md-4 col-lg-4 col-xl-4">
     <div className="service-item">
       <img src={image} alt="" />
       <h3>{title}</h3>

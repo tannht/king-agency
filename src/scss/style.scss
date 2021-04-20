@@ -206,28 +206,27 @@ ul {
 }
 .bottom-bar {
   color: $light-color;
-  width: 100%;
-  display: flex;
   background-color: $secondary-color;
   padding: 20px 20px 0 0;
+  display: flex;
   justify-content: space-between;
   a {
     color: white;
     text-decoration: none;
   }
   .copyright {
-    margin: 0 8vh !important;
+    width: 100%;
     ul {
       padding: 0;
       position: absolute;
-      right: 16px;
+      right: 0px;
     }
     li {
       display: inline;
       padding-right: 5em;
     }
-    .col-6:nth-child(1) {
-      justify-content: end;
+    .col-12:nth-child(1) {
+      padding-left: 5em;
     }
   }
 }
@@ -237,9 +236,15 @@ ul {
     .copyright {
       ul {
         position: static;
+        text-align: center;
       }
       li {
         display: list-item;
+        padding-right: 0;
+      }
+      .col-12:nth-child(1) {
+        padding-left: 0;
+        text-align: center;
       }
     }
   }

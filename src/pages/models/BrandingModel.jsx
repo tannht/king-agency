@@ -1,4 +1,4 @@
-class BlogModel {
+class BrandingModel {
   constructor({ url, title, description }) {
     this.url = url;
     this.title = title;
@@ -6,4 +6,4 @@ class BlogModel {
   }
 }
 
-export default BlogModel;
+export default BrandingModel;

@@ -52,7 +52,7 @@ const Footer = ({ hiddenContact = false }) => (
                 <Link to="/privacy-policy">Privacy Policy</Link>
               </li>
               <li>
-                <Link to="#">Terms and Conditions</Link>
+                <Link to="/">Terms and Conditions</Link>
               </li>
             </ul>
           </div>

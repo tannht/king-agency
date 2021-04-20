@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function SubMenu() {
   return (
-    <div className="Link">
+    <div className="NavLink">
       {/*sub menu */}
       <div className="list-group">
       <Link to="#">Strategy</Link>

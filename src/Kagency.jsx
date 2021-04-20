@@ -10,6 +10,7 @@ import Contact from "./pages/contact/Contact";
 import PrivacyPolicy from "./pages/privacy_policy/PrivacyPolicy";
 import { BackTop } from "antd";
 import './Kagency.scss';
+import Branding from "./pages/branding/Branding";
 
 const Kagency = () => {
   return (
@@ -37,6 +38,9 @@ const Kagency = () => {
           </Route>
           <Route path="/privacy-policy">
             <PrivacyPolicy />
+          </Route>
+          <Route path="/branding">
+            <Branding />
           </Route>
         </Switch>
       </Router>

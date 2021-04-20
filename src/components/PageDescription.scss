@@ -1,10 +1,11 @@
 .PageDescription {
-  min-height: 40em;
+  min-height: 50em;
   display: flex;
   align-items: center;
   text-align: center;
   .title {
     margin: auto;
+    align-items: center;
     h1 {
       font-size: 130px;
       text-transform: uppercase;
@@ -18,6 +19,7 @@
     font-weight: 500;
     h3 {
       color: gray;
+      padding-bottom: 1em;
     }
     p {
       font-size: 16px;
@@ -28,7 +30,8 @@
 
 @media (max-width: 671px) {
   .PageDescription {
-      padding-top: 2em;
+      padding-top: 10em;
+      padding-bottom: 4em;
     .title {
       width: 100%;
       padding: 0;
@@ -36,11 +39,15 @@
         font-size: 65px;
       }
     }
+    .content {
+      padding: 0 2em;
+    }
   }
 }
 
 @media (min-width: 671px) and (max-width: 1440px) {
   .PageDescription {
+    padding-top: 10em;
     .title {
       width: 100%;
       padding: 0;

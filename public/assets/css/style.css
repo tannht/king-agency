@@ -142,28 +142,32 @@ ul {
 
 .bottom-bar {
   color: #fff;
-  width: 100%;
-  display: flex;
   background-color: #4099f1;
   padding: 20px 20px 0 0;
+  display: flex;
   justify-content: space-between; }
   .bottom-bar a {
     color: white;
     text-decoration: none; }
   .bottom-bar .copyright {
-    margin: 0 8vh !important; }
+    width: 100%; }
     .bottom-bar .copyright ul {
       padding: 0;
       position: absolute;
-      right: 16px; }
+      right: 0px; }
     .bottom-bar .copyright li {
       display: inline;
       padding-right: 5em; }
-    .bottom-bar .copyright .col-6:nth-child(1) {
-      justify-content: end; }
+    .bottom-bar .copyright .col-12:nth-child(1) {
+      padding-left: 5em; }
 
 @media (max-width: 671px) {
   .bottom-bar .copyright ul {
-    position: static; }
+    position: static;
+    text-align: center; }
   .bottom-bar .copyright li {
-    display: list-item; } }
+    display: list-item;
+    padding-right: 0; }
+  .bottom-bar .copyright .col-12:nth-child(1) {
+    padding-left: 0;
+    text-align: center; } }

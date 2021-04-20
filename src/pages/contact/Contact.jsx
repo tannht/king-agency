@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Footer from "../../components/Footer";
 import "./Contact.scss";
 
@@ -40,7 +40,7 @@ const Contact = () => (
                 marginWidth="0"
                 src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=125/2 Hoa Hung Street, Ward 12, District 10, Ho Chi Minh City&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
               ></iframe>
-              <NavLink to="https://www.fridaynightfunkin.net/"></NavLink>
+              <Link to="https://www.fridaynightfunkin.net/"></Link>
             </div>
           </div>
         </div>

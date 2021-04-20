@@ -1,3 +1,4 @@
+@import '../../../scss/style.scss';
 .Info {
   padding-bottom: 5em;
   background: url("../../../assets/images/dot_wage.png");
@@ -30,12 +31,12 @@
     text-transform: uppercase;
   }
   h3 {
-    color: #aaaaaa;
+    color:#2d2d2d;
     letter-spacing: 0.1;
-    line-height: 1;
+    line-height: 1.25;
   }
   p {
-    font-weight: bold;
+    
     line-height: 1.2;
   }
   ul {
@@ -54,7 +55,7 @@
     text-transform: uppercase;
     font-weight: bold;
   }
-  .NavLink {
+  .Link {
     padding-bottom: 2em;
   }
 }

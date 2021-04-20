@@ -1,17 +1,17 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function SubMenu() {
   return (
-    <div className="NavLink">
+    <div className="Link">
       {/*sub menu */}
       <div className="list-group">
-      <NavLink to="#">Strategy</NavLink>
-      <NavLink to="#">Branding</NavLink>
-      <NavLink to="#">Digital Marketing</NavLink>
-      <NavLink to="#">Web/App</NavLink>
-      <NavLink to="#">Booking</NavLink>
-      <NavLink to="#">Become a Influencer</NavLink></div>
+      <Link to="#">Strategy</Link>
+      <Link to="#">Branding</Link>
+      <Link to="#">Digital Marketing</Link>
+      <Link to="#">Web/App</Link>
+      <Link to="#">Booking</Link>
+      <Link to="#">Become a Influencer</Link></div>
     </div>
   );
 }

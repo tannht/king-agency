@@ -1,4 +1,4 @@
-class Project {
+class ProjectModel {
   constructor({url, tags, title, description}) {
     this.url = url;
     this.tags = tags;
@@ -7,4 +7,4 @@ class Project {
   }
 }
 
-export default Project;
+export default ProjectModel;

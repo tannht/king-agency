@@ -9,6 +9,7 @@ import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 import PrivacyPolicy from "./pages/privacy_policy/PrivacyPolicy";
 import { BackTop } from "antd";
+import './Kagency.scss';
 
 const Kagency = () => {
   return (

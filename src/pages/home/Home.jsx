@@ -8,7 +8,7 @@ import "./Home.scss";
 import ClientsLogo from "../../components/ClientsLogo";
 function Home() {
   const HeaderComponent = () => (
-    <div>
+    <div className="projects-header">
       <h4>Projects</h4>
       <h3>
         Lorem Ipsum is simply dummy text of the printing and typesetting

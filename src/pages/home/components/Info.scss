@@ -59,6 +59,11 @@
     padding-bottom: 2em;
   }
 }
+.submenu {
+  .NavLink a {
+    line-height: 2
+  }
+}
 
 @media (max-width: 671px) {
   .info-rows {

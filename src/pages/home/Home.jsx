@@ -6,7 +6,10 @@ import News from "./components/news_components/News";
 import Info from "./components/Info";
 import "./Home.scss";
 import ClientsLogo from "../../components/ClientsLogo";
+import $ from 'jquery';
+
 function Home() {
+  
   const HeaderComponent = () => (
     <div className="projects-header">
       <h4>Projects</h4>
@@ -27,7 +30,7 @@ function Home() {
     <div className="Home">
       <Banner />
       <Info />
-      <div className="projects-component">
+      <div className="projects-component" onScroll={()=>alert("Table Scrolled")}>
         <ProjectsComponent headerComponent={<HeaderComponent />} />
       </div>
       <ClientsLogo />

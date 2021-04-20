@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import SubMenu from "./sub_components/SubMenu";
 
 const Footer = ({ hiddenContact = false }) => (
@@ -49,10 +49,10 @@ const Footer = ({ hiddenContact = false }) => (
           <div className="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
             <ul>
               <li>
-                <NavLink to="/privacy-policy">Privacy Policy</NavLink>
+                <Link to="/privacy-policy">Privacy Policy</Link>
               </li>
               <li>
-                <NavLink to="#">Terms and Conditions</NavLink>
+                <Link to="#">Terms and Conditions</Link>
               </li>
             </ul>
           </div>

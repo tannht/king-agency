@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import NavButton from "./sub_components/NavButton";
 import "./Header.scss";
@@ -11,10 +11,10 @@ function Header() {
         <Logo />
         <ul className="nav">
           <li className="nav-item">
-            <NavLink to="/our-work">Our work</NavLink>
+            <Link to="/our-work">Our work</Link>
           </li>
           <li className="nav-item">
-            <NavLink to="/contact-us">Contact us</NavLink>
+            <Link to="/contact-us">Contact us</Link>
           </li>
         </ul>
         {/*--NavButtion --*/}

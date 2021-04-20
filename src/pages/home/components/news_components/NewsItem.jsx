@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./NewsItem.scss";
 
 const NewsItem = ({ url, tags, title, description }) => {
@@ -23,7 +23,7 @@ const NewsItem = ({ url, tags, title, description }) => {
                     {description}
                     </div>
                       <div className="read-more">
-                      <NavLink to="#" >Read More <i className="fa fa-caret-right" aria-hidden="true"></i></NavLink>
+                      <Link to="#" >Read More <i className="fa fa-caret-right" aria-hidden="true"></i></Link>
                       </div>
                 </div>
             </div>

@@ -3,8 +3,15 @@
     color: gray;
   }
 }
-
-.menu-collapse{
+.navbar {
+  .logo {
+    width: 100px!important;
+    background-color: #001d26;
+    padding: 5px 15px;
+    border-radius: 10px;
+  }
+}
+.menu-collapse {
   border-color: transparent !important;
   background-color: transparent !important;
 }

@@ -10,8 +10,24 @@ import $ from 'jquery';
 
 function Home() {
   
+
+
+  $(document).ready(function(){   
+    
+    var scroll_pos = 0;
+    $(document).scroll(function() { 
+        scroll_pos = $(this).scrollTop();
+        if(scroll_pos > 1500 && scroll_pos <3000) {
+            $("body").addClass('test');
+        } else  {
+            $("body").removeClass('test');
+        }
+    });
+    
+});
+
   const HeaderComponent = () => (
-    <div className="projects-header">
+    <div className="projects-header" >
       <h3>
       Kagency tự hào được lựa chọn bởi các đối tác như: Samsung, Gigabyte, DEE Net, Vala… Sự tận tâm của Kagency được minh chứng qua sự hiệu quả và đảm bảo mọi nhu cầu của khách hàng đều được hoàn thành một cách trọn vẹn nhất.
       </h3>

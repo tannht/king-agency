@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Banner from "./components/Banner";
 import Footer from "../../components/Footer";
 import ProjectsComponent from "../../components/projects_components/ProjectsComponent";
@@ -9,18 +9,18 @@ import ClientsLogo from "../../components/ClientsLogo";
 import $ from "jquery";
 
 function Home() {
-  $(document).ready(function () {
-    var scroll_pos = 0;
-    $(document).scroll(function () {
-      scroll_pos = $(this).scrollTop();
+  useEffect(() => {
+    const handleScroll = () => {
+      var scroll_pos = window.scrollY;
       if (scroll_pos > 1500 && scroll_pos < 3000) {
-        $(".Home").addClass("change-background");
+        $("body").addClass("test");
       } else {
-        $(".Home").removeClass("change-background");
+        $("body").removeClass("test");
       }
-    });
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   });
-
   const HeaderComponent = () => (
     <div className="projects-header">
       <h3>

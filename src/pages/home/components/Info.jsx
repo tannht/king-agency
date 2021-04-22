@@ -48,7 +48,7 @@ const Info = () => (
           <strong>Kagency</strong> "phù thuỷ" đưa thương hiệu bạn lên tầm cao
           mới.
         </h3>
-        <SubMenu />
+        <div className="submenu"><SubMenu /></div>
 
         <InfoButton label={"All"} horizontalPadding={true} />
       </div>

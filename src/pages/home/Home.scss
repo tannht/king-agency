@@ -1,12 +1,19 @@
 @import "/src/scss/variables.scss";
-
+$bgcolor1 : #001d26;
+$bgcolor2 : #fff;
 .Home {
   margin: auto;
   .projects-component {
-    background-color: #001d26;
+    transition: background-color 0.3s ease-in-out 0s;
     padding: 5em 0;
     .projects-header {
       padding-bottom: 2em;
     }
   }
+}
+.test {
+  background-color: #001d26;
+  transition: background-color 0.3s ease-in-out 0s;
+  
+
 }

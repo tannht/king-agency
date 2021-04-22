@@ -22,8 +22,8 @@ const Projects = () => {
     <div className="Projects">
       <PageDescription
         title="Projects"
-        titleContent="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-        content="It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
+        titleContent="Kagency tự hào được lựa chọn bởi các đối tác như: Samsung, Gigabyte, DEE Net, Vala… Sự tận tâm của Kagency được minh chứng qua sự hiệu quả và đảm bảo mọi nhu cầu của khách hàng đều được hoàn thành một cách trọn vẹn nhất."
+        content="Với Kagency chúng tôi, khách hàng như một đối tác, chính vì vậy sự phối hợp giữa Kagency và khách hàng là sự kết nối chặt chẽ khiến suốt quá trình đồng hành diễn ra một cách thuận lợi. Kết quả đạt được về sự tăng trưởng doanh thu, danh tiếng thương hiệu của đối tác được đẩy mạnh hơn mong đợi. Đó là lý do vì sao Kagency ngày càng được nhiều khách hàng lựa chọn như là một đối tác chiến lược."
       />
       <div className="project-list">
         <ProjectsComponent headerComponent={<HeaderComponent />} />

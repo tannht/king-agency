@@ -10,38 +10,38 @@ const News = () => (
         <h4>Our Latest Articles</h4>
         <NewsItem
           url={
-            "https://image.freepik.com/free-photo/digital-increasing-bar-graph-with-businessman-hand-overlay_53876-97640.jpg"
+            "https://i.imgur.com/h5Jecaa.png"
           }
-          tags={["Branding", "Strategy", "Digital Marketing"]}
+          tags={["Strategy"]}
           title={
-            "There are many variations of passages of Lorem Ipsum available"
+            "Những điều cần biết về Market Strategic Development"
           }
           description={
-            "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia"
+            "Phát triển thị trường là tổng hợp các cách thức, phương hướng, biện pháp mà doanh nghiệp áp dụng để đưa khối lượng sản phẩm tiêu thụ trên thị trường đạt mức tối đa. Từ đó góp phần giúp doanh nghiệp mở rộng thị phần và phát triển hoạt động kinh doanh ngày một tốt hơn."
           }
         />
         <NewsItem
           url={
             "https://image.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg"
           }
-          tags={["Branding", "Strategy", "Digital Marketing"]}
+          tags={["Booking"]}
           title={
-            "There are many variations of passages of Lorem Ipsum available"
+            "PR Booking là gì?"
           }
           description={
-            "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia"
+            "PR Booking là một thuật ngữ quen thuộc được sử dụng và xuất hiện nhiều trong lĩnh vực marketing. Nếu như bạn đang thắc mắc không biết PR booking là gì thì hãy cùng KAGENCY tìm hiểu về từ khóa này nhé."
           }
         />
         <NewsItem
           url={
             "https://www.disruptivestatic.com/wp-content/uploads/2018/07/b2b-marketing-blog.jpg"
           }
-          tags={["Branding", "Strategy", "Digital Marketing"]}
+          tags={[ "Influencer Marketing"]}
           title={
-            "There are many variations of passages of Lorem Ipsum available"
+            "Influencer Marketing là gì?"
           }
           description={
-            "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia"
+            "Influencer “người có tầm ảnh hưởng” – họ là những người nổi tiếng, tạo ra xu thế, sức ảnh hưởng lớn đến với cộng đồng trực tuyến."
           }
         />
         <div className="btn-more">

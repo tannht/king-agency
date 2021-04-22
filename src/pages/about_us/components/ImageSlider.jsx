@@ -14,6 +14,10 @@ const ImageSlider = () => {
     setCurrent(current === data.length - 1 ? 0 : current + 1);
   };
 
+  const getIndex = (index) => {
+    console.log(index)
+  };
+
   console.log(current);
 
   if (!Array.isArray(data) || data.length <= 0) {
@@ -34,9 +38,10 @@ const ImageSlider = () => {
               }}
             >
               {data.map((item, index) => {
+                
                 return (
-                  <div className="image" id={`image-${index}`} key={index}>
-                    <img src={item.image} alt={item.title} key={item.index} />
+                  <div className="image" id={`image-${index}`} key={index}  onClick={() => setCurrent(index)}>
+                    <img src={item.image} alt={item.title} key={item.index}/>
                   </div>
                 );
               })}

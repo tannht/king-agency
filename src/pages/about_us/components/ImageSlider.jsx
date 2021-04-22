@@ -14,12 +14,6 @@ const ImageSlider = () => {
     setCurrent(current === data.length - 1 ? 0 : current + 1);
   };
 
-  const getIndex = (index) => {
-    console.log(index)
-  };
-
-  console.log(current);
-
   if (!Array.isArray(data) || data.length <= 0) {
     return null;
   }

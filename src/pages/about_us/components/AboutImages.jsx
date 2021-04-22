@@ -1,3 +1,5 @@
+import "./AboutImages.scss";
+
 const AboutImages = () => (
   <div className="row">
     <div className="col-5 about-image">

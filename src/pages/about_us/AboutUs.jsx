@@ -5,7 +5,7 @@ import AboutDescription from "./components/AboutDescription";
 import AboutImages from "./components/AboutImages";
 import ClientsLogo from "../../components/ClientsLogo";
 import OurTeam from "./components/OurTeam";
-
+import Footer from "../../components/Footer";
 
 const AboutUs = () => (
   <div className="AboutUs">
@@ -21,6 +21,7 @@ const AboutUs = () => (
     </div>
     <OurTeam />
     <ClientsLogo />
+    <Footer />
   </div>
 );
 

@@ -1,10 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-
-
 function Menu() {
-
   return (
     <div className="list-group main-menu" id="main-menu">
       <Link className="menu-item" to="/" >Home</Link>
@@ -16,5 +12,4 @@ function Menu() {
     </div>
   );
 }
-
 export default Menu;

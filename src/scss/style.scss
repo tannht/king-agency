@@ -1,41 +1,11 @@
-$primary-color: #001d26;
-$secondary-color: #4099f1;
-$light-color: #fff;
+@import "./variables.scss";
 
-//-------FONT SETTING-----/
-$menu-fontsize: 46px;
-$submenu-fontsize: 38px;
-
-/* Mixin */
-/* Set các giá trị với màn hình tương ứng */
-$mobile-width: 480px;
-$tablet-width: 768px;
-$desktop-width: 1024px;
-
-@mixin mobile {
-  @media (max-width: #{$mobile-width - 1px}) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-  }
-}
-
-p {
+ p {
   font-size: 1rem;
   @include mobile {
     font-size: 12px;
   }
 }
-
 ul {
   list-style: none;
 }
@@ -47,7 +17,7 @@ ul {
   position: fixed;
   z-index: 999;
   width: 100%;
-  background-color:#001d26;
+  background-color: #001d26;
 }
 .navbar {
   height: 90px;

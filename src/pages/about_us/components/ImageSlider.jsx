@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import { SliderData } from "./SliderData";
+import SliderData from "./SliderData";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import "./ImageSlider.scss";
 
@@ -32,10 +32,14 @@ const ImageSlider = () => {
               }}
             >
               {data.map((item, index) => {
-                
                 return (
-                  <div className="image" id={`image-${index}`} key={index}  onClick={() => setCurrent(index)}>
-                    <img src={item.image} alt={item.title} key={item.index}/>
+                  <div
+                    className="image"
+                    id={`image-${index}`}
+                    key={index}
+                    onClick={() => setCurrent(index)}
+                  >
+                    <img src={item.image} alt={item.title} key={item.index} />
                   </div>
                 );
               })}

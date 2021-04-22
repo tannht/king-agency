@@ -13,9 +13,9 @@ function Home() {
     const handleScroll = () => {
       var scroll_pos = window.scrollY;
       if (scroll_pos > 1500 && scroll_pos < 3000) {
-        $("body").addClass("test");
+        $(".Home").addClass("change-background");
       } else {
-        $("body").removeClass("test");
+        $(".Home").removeClass("change-background");
       }
     };
     window.addEventListener("scroll", handleScroll, { passive: true });

@@ -1,6 +1,6 @@
 import MemberImages from "./MemberImages";
 import "./OurTeam.scss";
-import Slider from "./Slider";
+import ImageSlider from "./ImageSlider";
 
 const OurTeam = () => {
   return (
@@ -19,16 +19,7 @@ const OurTeam = () => {
         <div className="kagency">
           <h4>Why Choose</h4>
           <h3>Kagency?</h3>
-          <Slider />
-          <div className="detail">
-            <h1>CREATIVITY</h1>
-            <p>
-              Repudiandae esse sit ad aspernatur nulla fuga qui accusanum
-              incidunt. Voluptas et sed aspernatur. Error qui odio ut deleni
-              autem qui alias. Et dolores vitae voluptabus veniam sunt officia
-              doloribus.
-            </p>
-          </div>
+          <ImageSlider />
         </div>
       </div>
     </div>

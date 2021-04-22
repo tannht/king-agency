@@ -1,34 +1,36 @@
 .OurTeam {
   background-color: #001d26;
-  z-index: -9;
   position: relative;
+  .bg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 41em;
+    width: 15em;
+    z-index: 1;
+    filter: blur(3px);
+    background: url("../../../assets/images/dot_bg.png");
+    background-position: left;
+    background-repeat: repeat;
+  }
   .ourteam-image {
     position: relative;
     padding: 2em 5em;
     justify-content: center;
     align-items: center;
-    .bg {
-      position: absolute;
-      left: 0px;
-      top: 0px;
-      height: 41em;
-      width: 15em;
-      z-index: -1;
-      filter: blur(3px);
-      background: url("../../../assets/images/dot_bg.png");
-      background-position: left;
-      background-repeat: repeat;
-    }
+
     .col-6:nth-child(1) {
-      z-index: 1;
+      z-index: 2;
       padding-right: 15em;
     }
     .col-6:nth-child(2) {
+      z-index: 2;
       padding-right: 15em;
     }
     h3 {
       width: 5em;
       color: lightblue;
+      padding-right: 1em;
       font-size: 110px;
       text-align: left;
       text-transform: uppercase;
@@ -59,23 +61,6 @@
       text-transform: uppercase;
       font-weight: bold;
     }
-    .detail {
-      margin: auto;
-      padding: 2em 0;
-      h1 {
-        text-align: center;
-        text-transform: uppercase;
-        color: white;
-        font-size: 75px;
-        margin-bottom: 0;
-        letter-spacing: 2px;
-      }
-      p {
-        margin: auto;
-        width: 60%;
-        color: lightblue;
-      }
-    }
   }
 }
 
@@ -98,13 +83,6 @@
       }
       h3 {
         font-size: 35px;
-      }
-      .detail {
-        h1 {
-          font-size: 30px;
-          margin-bottom: 0;
-          letter-spacing: 2px;
-        }
       }
     }
   }

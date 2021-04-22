@@ -18,7 +18,7 @@ const NavButton = () => {
 
   return (
     <div>
-      <Button className="menu-collapse" onClick={showModal}>
+      <Button className="menu-collapse" onClick={showModal} label="menu">
         <i className="fas fa-bars fa-2x"></i>
       </Button>
 

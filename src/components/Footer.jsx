@@ -2,6 +2,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import SubMenu from "./sub_components/SubMenu";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import ytGrey from '../assets/images/icons/yt_grey.svg';
+import pinGrey from '../assets/images/icons/pin_grey.svg';
+import insGrey from '../assets/images/icons/ins_grey.svg';
+import inlGrey from '../assets/images/icons/inl_grey.svg';
+import LogoIcon from '../assets/images/logo.svg';
 
 const Footer = ({ hiddenContact = false }) => {
   const [modal, setModal] = useState(false);
@@ -29,13 +34,13 @@ const Footer = ({ hiddenContact = false }) => {
           <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-social">
             <h3>Social Link</h3>
             <div className="footer-fanpage">
-              <img src="assets/images/logo.svg" height={50} alt=""></img>
+              <img src={LogoIcon} height={50} alt=""></img>
             </div>
             <div className="footer-iconlink">
-              <img src="./assets/images/icons/yt_light.svg" alt="" />
-              <img src="./assets/images/icons/pin_light.svg" alt="" />
-              <img src="./assets/images/icons/ins_light.svg" alt="" />
-              <img src="./assets/images/icons/inl_light.svg" alt="" />
+            <img src={ytGrey} alt="" />
+            <img src={pinGrey} alt="" />
+            <img src={inlGrey} alt="" />
+            <img src={insGrey} alt="" />
             </div>
           </div>
           <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-servicelink">

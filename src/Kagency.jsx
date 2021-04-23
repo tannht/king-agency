@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BackTop } from "antd";
+import "./Kagency.scss";
 import Header from "./components/Header";
 import Home from "./pages/home/Home";
 import AboutUs from "./pages/about_us/AboutUs";
@@ -8,8 +10,6 @@ import Projects from "./pages/projects/Projects";
 import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 import PrivacyPolicy from "./pages/privacy_policy/PrivacyPolicy";
-import { BackTop } from "antd";
-import "./Kagency.scss";
 import Branding from "./pages/branding/Branding";
 import BlogItemPage from "./pages/blog/BlogItemPage";
 

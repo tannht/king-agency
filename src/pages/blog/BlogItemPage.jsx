@@ -6,6 +6,11 @@ import { FaUserCircle, FaRegCalendarAlt } from "react-icons/fa";
 import ClientsLogo from "../../components/ClientsLogo";
 import Footer from "../../components/Footer";
 import MoreBlog from "./components/MoreBlog";
+import ytGrey from '../../assets/images/icons/yt_grey.svg';
+import pinGrey from '../../assets/images/icons/pin_grey.svg';
+import insGrey from '../../assets/images/icons/ins_grey.svg';
+import inlGrey from '../../assets/images/icons/inl_grey.svg';
+
 const BlogItemPage = () => {
   const { id } = useParams();
   const blog = BlogData[id];
@@ -55,11 +60,11 @@ const BlogItemPage = () => {
             className="blog-content"
             dangerouslySetInnerHTML={createMarkup()}
           ></div>
-          <div className="iconlink">
-            <img src="./assets/images/icons/yt_light.svg" alt="" />
-            <img src="./assets/images/icons/pin_light.svg" alt="" />
-            <img src="./assets/images/icons/ins_light.svg" alt="" />
-            <img src="./assets/images/icons/inl_light.svg" alt="" />
+          <div className="icon-link">
+            <img src={ytGrey} alt="" />
+            <img src={pinGrey} alt="" />
+            <img src={inlGrey} alt="" />
+            <img src={insGrey} alt="" />
           </div>
         </div>
         <MoreBlog />

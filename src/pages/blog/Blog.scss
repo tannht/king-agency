@@ -1,0 +1,30 @@
+.Blog {
+  .blog-content {
+    padding-top: 1em;
+  }
+  .categories {
+    text-align: center;
+    ul {
+      padding: 0;
+      margin-top: 1em;
+      align-items: center;
+    }
+    li {
+      display: inline-block;
+      .category-item {
+        text-align: center;
+        width: 9em;
+        border: 2px solid black;
+        padding: 0.2em 0.5em;
+        margin-right: 0.5em;
+        margin-top: 0.5em;
+        font-weight: bold;
+        border-radius: 20px;
+      }
+    }
+  }
+  .more {
+    text-align: center;
+    margin: 1em auto;
+  }
+}

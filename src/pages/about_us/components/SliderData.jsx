@@ -1,4 +1,4 @@
-export const SliderData = [
+const SliderData = [
   {
     index: 0,
     image:
@@ -40,3 +40,5 @@ export const SliderData = [
     "Repudiandae esse sit ad aspernatur nulla fuga qui accusanum incidunt. Voluptas et sed aspernatur. Error qui odio ut deleni autem qui alias. Et dolores vitae voluptabus veniam sunt officia doloribus.",
   },
 ];
+
+export default SliderData;

@@ -60,13 +60,15 @@
   }
 }
 
-@media (max-width: 671px) {
-  .BlogDetailHeader {
-    padding-top: 10em;
-    padding-bottom: 4em;
-    .title {
-      h1 {
-        font-size: 60px;
+@media only screen and (max-width: 671px) {
+  .BlogItemPage {
+    .BlogDetailHeader {
+      padding-top: 10em;
+      padding-bottom: 4em;
+      .title {
+        h1 {
+          font-size: 40px;
+        }
       }
     }
   }

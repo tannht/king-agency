@@ -37,11 +37,38 @@
     border: 3px solid grey;
     border-radius: 20px;
     text-align: center;
-    padding: 0.3em;
+    padding: 0.5em;
     margin: auto;
     p {
       text-transform: uppercase;
       font-weight: 500;
+    }
+  }
+}
+
+@media (max-width: 671px) {
+  .MoreBlog {
+    .more-blog-item {
+      padding: 0.5em;
+      .BlogItem {
+        img {
+          width: 95%;
+        }
+        h3 {
+          text-transform: uppercase;
+          font-weight: 500;
+          a {
+            color: whitesmoke;
+          }
+        }
+      }
+    }
+    .more-blog-item:nth-child(3) {
+        margin: auto;
+        padding-bottom: 1em;
+    }
+    .btn-all-post {
+      padding: 0.5em;  
     }
   }
 }

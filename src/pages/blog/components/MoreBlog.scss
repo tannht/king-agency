@@ -1,4 +1,47 @@
 .MoreBlog {
-    height: 40em;
-    background-color: #001d26;
+  background-color: #001d26;
+  .read-more {
+    font-size: 45px;
+    color: lightcyan;
+    padding: 1em 0 0.5em 0;
+  }
+
+  .more-blog-item {
+    padding: 0;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    .BlogItem {
+      img {
+        height: 30em;
+      }
+      .blog-category {
+        padding-left: 0.4em;
+        font-size: 15px;
+      }
+      h3 {
+        text-transform: uppercase;
+        font-weight: 500;
+        a {
+          color: dodgerblue;
+        }
+      }
+    }
+  }
+  .more-blog-item:nth-child(3) {
+      margin: auto;
+  }
+  .btn-all-post {
+    color: lightcyan;
+    width: 7em;
+    height: 7em;
+    border: 3px solid grey;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0.3em;
+    margin: auto;
+    p {
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
 }

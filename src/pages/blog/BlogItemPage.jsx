@@ -67,7 +67,7 @@ const BlogItemPage = () => {
             <img src={insGrey} alt="" />
           </div>
         </div>
-        <MoreBlog />
+        <MoreBlog category={blog.category} />
         <ClientsLogo />
         <Footer />
       </div>

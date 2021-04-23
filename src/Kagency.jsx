@@ -11,7 +11,8 @@ import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 import PrivacyPolicy from "./pages/privacy_policy/PrivacyPolicy";
 import Branding from "./pages/branding/Branding";
-import BlogItemPage from "./pages/blog/BlogItemPage";
+import BlogDetailPage from "./pages/blog/BlogDetailPage";
+import ProjectDetailPage from "./pages/projects/ProjectDetailPage";
 
 const Kagency = () => {
   return (
@@ -22,9 +23,10 @@ const Kagency = () => {
           <Route path="/" exact component={Home} />
           <Route path="/about-us" component={AboutUs} />
           <Route path="/our-work" component={OurWork} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/blog" component={Blog} exact/>
-          <Route path="/blog/:id" component={BlogItemPage} />
+          <Route path="/projects" exact component={Projects} />
+          <Route path="/projects/:id" component={ProjectDetailPage} />
+          <Route path="/blog" exact component={Blog} />
+          <Route path="/blog/:id" component={BlogDetailPage} />
           <Route path="/contact-us" component={Contact} />
           <Route path="/privacy-policy" component={PrivacyPolicy} />
           <Route path="/branding" component={Branding} />

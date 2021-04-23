@@ -1,5 +1,6 @@
 class ProjectModel {
-  constructor({url, tags, title, description}) {
+  constructor({ id, url, tags, title, description }) {
+    this.id = id;
     this.url = url;
     this.tags = tags;
     this.title = title;

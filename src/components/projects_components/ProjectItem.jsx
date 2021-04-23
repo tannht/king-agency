@@ -1,16 +1,16 @@
+import { Link } from "react-router-dom";
 import "./ProjectItem.scss";
 
-const ProjectItem = ({url, tags, title, description}) => {
+const ProjectItem = ({ project }) => {
     const RenderTags = () => {
-        return tags.map((item, index) => (
+        return project.tags.map((item, index) => (
             <span className="project-tag" key={index}>{item}</span>
         ));
     }
-
     return (
         <div className="ProjectItem">
           <img
-            src={url}
+            src={project.url}
             className="card-img-top"
             alt=""
           />
@@ -18,8 +18,8 @@ const ProjectItem = ({url, tags, title, description}) => {
           <RenderTags />
           </div>
           <div className="card-body">
-            <h5 className="card-title">{title}</h5>
-            <p className="card-text">{description}</p>
+            <h5 className="card-title"><Link to={`/projects/${project.id}`}>{project.title}</Link></h5>
+            <p className="card-text">{project.description}</p>
       
             {/* -----------Project Item -----------*/}
           </div>

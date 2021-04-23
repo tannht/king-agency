@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { useParams } from "react-router";
 import BlogData from "./BlogData";
-import "./BlogItemPage.scss";
+import "./BlogDetailPage.scss";
 import { FaUserCircle, FaRegCalendarAlt } from "react-icons/fa";
 import ClientsLogo from "../../components/ClientsLogo";
 import Footer from "../../components/Footer";
@@ -11,7 +11,7 @@ import pinGrey from '../../assets/images/icons/pin_grey.svg';
 import insGrey from '../../assets/images/icons/ins_grey.svg';
 import inlGrey from '../../assets/images/icons/inl_grey.svg';
 
-const BlogItemPage = () => {
+const BlogDetailPage = () => {
   const { id } = useParams();
   const blog = BlogData[id];
 
@@ -53,7 +53,7 @@ const BlogItemPage = () => {
 
   return (
     <Fragment>
-      <div className="BlogItemPage">
+      <div className="BlogDetailPage">
         <BlogHeader />
         <div className="container">
           <div
@@ -75,4 +75,4 @@ const BlogItemPage = () => {
   );
 };
 
-export default BlogItemPage;
+export default BlogDetailPage;

@@ -1,4 +1,4 @@
-.BlogItemPage {
+.BlogDetailPage {
   .blog-content {
     padding: 2em 0;
     color: grey;
@@ -61,7 +61,7 @@
 }
 
 @media only screen and (max-width: 671px) {
-  .BlogItemPage {
+  .BlogDetailPage {
     .BlogDetailHeader {
       padding-top: 10em;
       padding-bottom: 4em;

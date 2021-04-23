@@ -8,13 +8,13 @@ const Footer = ({ hiddenContact = false }) => {
   const toggle = () => setModal(!modal);
 
   return (
-    <div className="footer">
-      <div className={hiddenContact ? "d-none" : "d-block"}>
-        <div className="row footer-content">
-          <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+    <div className="footer ">
+      <div className={hiddenContact ? "d-none" : "d-block"} >
+        <div className="row footer-content  container ">
+          <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
             {/* INFO */}
             <h3>Contact Us</h3>
-            <div className="footer-info">
+            <div className="footer-info ">
               125/2 Hoa Hung Street, Ward 12, District 10, Ho Chi Minh City
               <ul>
                 <li>

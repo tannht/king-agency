@@ -9,8 +9,9 @@ import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 import PrivacyPolicy from "./pages/privacy_policy/PrivacyPolicy";
 import { BackTop } from "antd";
-import './Kagency.scss';
+import "./Kagency.scss";
 import Branding from "./pages/branding/Branding";
+import BlogItemPage from "./pages/blog/BlogItemPage";
 
 const Kagency = () => {
   return (
@@ -18,30 +19,15 @@ const Kagency = () => {
       <Router>
         <Header />
         <Switch>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/about-us">
-            <AboutUs />
-          </Route>
-          <Route path="/our-work">
-            <OurWork />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route path="/blog">
-            <Blog />
-          </Route>
-          <Route path="/contact-us">
-            <Contact />
-          </Route>
-          <Route path="/privacy-policy">
-            <PrivacyPolicy />
-          </Route>
-          <Route path="/branding">
-            <Branding />
-          </Route>
+          <Route path="/" exact component={Home} />
+          <Route path="/about-us" component={AboutUs} />
+          <Route path="/our-work" component={OurWork} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/blog" component={Blog} exact/>
+          <Route path="/blog/:id" component={BlogItemPage} />
+          <Route path="/contact-us" component={Contact} />
+          <Route path="/privacy-policy" component={PrivacyPolicy} />
+          <Route path="/branding" component={Branding} />
         </Switch>
       </Router>
       <BackTop />

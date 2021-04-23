@@ -4,9 +4,12 @@
     object-fit: cover;
   }
   h3 {
-    color: grey;
     font-size: 20px;
     font-weight: bold;
+    a {
+      color: grey;
+      cursor: pointer;
+    }
   }
   .blog-category {
     border-radius: 20px;
@@ -26,9 +29,12 @@
     object-fit: cover;
   }
   h3 {
-    color: teal;
     font-size: 35px;
     font-weight: bold;
+    a {
+      color: teal;
+      cursor: pointer;
+    }
   }
   .blog-category {
     border-radius: 20px;

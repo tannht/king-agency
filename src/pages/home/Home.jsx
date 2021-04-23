@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { Fragment, useEffect } from "react";
 import Banner from "./components/Banner";
 import Footer from "../../components/Footer";
 import ProjectsComponent from "../../components/projects_components/ProjectsComponent";
@@ -40,19 +40,21 @@ function Home() {
     </div>
   );
   return (
-    <div className="Home">
-      <Banner />
-      <Info />
-      <div
-        className="projects-component"
-        onScroll={() => alert("Table Scrolled")}
-      >
-        <ProjectsComponent headerComponent={<HeaderComponent />} />
+    <Fragment>
+      <div className="Home">
+        <Banner />
+        <Info />
+        <div
+          className="projects-component"
+          onScroll={() => alert("Table Scrolled")}
+        >
+          <ProjectsComponent headerComponent={<HeaderComponent />} />
+        </div>
+        <ClientsLogo />
+        <News />
+        <Footer />
       </div>
-      <ClientsLogo />
-      <News />
-      <Footer />
-    </div>
+    </Fragment>
   );
 }
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PageDescription from "../../components/PageDescription";
 import ServiceItem from "./components/ServiceItem";
 import ClientsLogo from "../../components/ClientsLogo";
@@ -6,6 +6,7 @@ import "./OurWork.scss";
 import Footer from "../../components/Footer";
 
 const OurWork = () => (
+  <Fragment>
   <div className="OurWork">
     <div className="container">
       <PageDescription
@@ -80,6 +81,7 @@ const OurWork = () => (
     <ClientsLogo />
     <Footer />
   </div>
+  </Fragment>
 );
 
 export default OurWork;

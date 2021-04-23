@@ -1,6 +1,6 @@
 .Blog {
   .blog-content {
-    padding-top: 1em;
+    padding-top: 2em;
   }
   .categories {
     text-align: center;
@@ -14,12 +14,18 @@
       .category-item {
         text-align: center;
         width: 9em;
-        border: 2px solid black;
+        color: indigo;
+        border: 2px solid indigo;
         padding: 0.2em 0.5em;
         margin-right: 0.5em;
-        margin-top: 0.5em;
         font-weight: bold;
         border-radius: 20px;
+        text-transform: uppercase;
+      }
+      .category-item.active {
+        border: 2px solid indigo;
+        background-color: indigo;
+        color: white;
       }
     }
   }

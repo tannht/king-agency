@@ -28,28 +28,28 @@
   }
 }
 
-@media (max-width: 671px) {
+@media only screen and (max-width: 671px) {
   .PageDescription {
       padding-top: 10em;
       padding-bottom: 4em;
     .title {
-      width: 100%;
+      width: 90%;
       padding: 0;
       h1 {
-        font-size: 65px;
+        font-size: 55px;
       }
     }
     .content {
-      padding: 0 2em;
+      padding: 0 3em;
     }
   }
 }
 
-@media (min-width: 671px) and (max-width: 1440px) {
+@media  only screen and (min-width: 672px) and (max-width: 1024px) {
   .PageDescription {
     padding-top: 10em;
     .title {
-      width: 100%;
+      width: 90%;
       padding: 0;
       h1 {
         font-size: 90px;

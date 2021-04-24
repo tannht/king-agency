@@ -10,6 +10,16 @@
       padding-right: 1em;
     }
   }
+  .card-body {
+    .card-title {
+      a {
+        color: grey;
+      }
+      a:hover  {
+        color: dodgerblue;
+      }
+    }
+  }
 }
 
 .more-prjects {

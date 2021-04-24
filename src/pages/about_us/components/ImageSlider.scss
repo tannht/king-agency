@@ -83,8 +83,8 @@
   }
 }
 
-$i: 0;
-@for $i from 0 through 5 {
+$i: 1;
+@for $i from 1 through 5 {
   .image-slider-content.active-image-#{$i} #image-#{$i} {
     opacity: 1;
     transform: scale(1);

@@ -14,7 +14,7 @@ const Blog = () => {
       <div className="Blog">
         <PageImageDescription
           url={"https://wallpaperaccess.com/full/656665.jpg"}
-          title="blog"
+          titleHeader="blog"
           titleContent="News, insights, and creative BLOG culture from KAGENCY."
         />
         <div className="container">

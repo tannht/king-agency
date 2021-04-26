@@ -7,7 +7,7 @@ import Footer from "../../components/Footer";
 import "./ProjectDetailPage.scss";
 import ProjectSlider from "./components/ProjectSlider";
 
-const ProjectDetailPage = () => {
+const ProjectDetailPage = ({deviceType}) => {
   const { id } = useParams();
   const project = ProjectData[id];
   const projectsRelated = [];
@@ -38,7 +38,7 @@ const ProjectDetailPage = () => {
           dangerouslySetInnerHTML={createMarkup()}
         ></div>
         <div className="container">
-          <ProjectSlider projects={projectsRelated} />
+          <ProjectSlider projects={projectsRelated}/>
         </div>
         <ClientsLogo />
         <Footer />

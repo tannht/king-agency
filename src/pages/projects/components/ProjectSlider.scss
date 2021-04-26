@@ -5,44 +5,7 @@
     font-weight: bold;
     font-size: 45px;
   }
-  .project-slider {
-    .slider {
-      position: relative;
-      padding: 0 5em;
-    }
-    .back-slider {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      z-index: 9;
-      background-color: transparent;
-      border: transparent;
-    }
-    .next-slider {
-      position: absolute;
-      top: 50%;
-      right: 0;
-      z-index: 9;
-      background-color: transparent;
-      border: transparent;
-    }
-  }
-}
-@media only screen and (max-width: 667px) {
-    .ProjectSlider {
-      .project-slider {
-        .col-12 {
-          height: 20em;
-        }
-      }
-    }
-  }
-@media only screen and (min-width: 667px) and (max-width: 736px) {
-  .ProjectSlider {
-    .project-slider {
-      .col-12 {
-        height: 30em;
-      }
-    }
+  .product-item-slider {
+    margin: 0.4em;
   }
 }

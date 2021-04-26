@@ -18,7 +18,7 @@ ul {
   position: fixed;
   z-index: 999;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.267); }
+  background-color: #001d26; }
 
 .navbar {
   height: 90px;
@@ -103,7 +103,7 @@ ul {
   color: #fff;
   background-color: #001d26; }
   .footer .footer-content {
-    padding: 2em 5em;
+    padding: 2em 0em;
     margin: auto; }
     .footer .footer-content h3 {
       color: #fff;
@@ -115,6 +115,11 @@ ul {
       padding-left: 0; }
       .footer .footer-info ul svg {
         margin-right: 0.3em; }
+    .footer .footer-info .subscribe span {
+      text-decoration: none;
+      color: #4099f1;
+      font-size: 22px;
+      font-weight: 500; }
   .footer .footer-iconlink {
     padding-bottom: 2em;
     display: flex;

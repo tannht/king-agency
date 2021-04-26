@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
- p {
+p {
   font-size: 1rem;
   @include mobile {
     font-size: 12px;
@@ -137,6 +137,34 @@ ul {
         margin-right: 0.3em;
       }
     }
+    .subscribe {
+      span {
+        text-decoration: none;
+        color: $secondary-color;
+        font-size: 22px;
+        font-weight: 500;
+      }
+    }
+
+    // .subscribe-modal-button {
+    //   background-color: transparent;
+    //   border: none;
+    //   outline: none;
+    //   font-size: 24px;
+    //   padding: 0;
+    //   color: $secondary-color;
+    //   font-weight: 600;
+    //   appearance: none;
+    //   :focus {
+    //     outline: none;
+    //     border: none;
+    //   }
+    //   :active {
+    //     outline: none;
+    //     background-color: transparent;
+    //     color: $secondary-color;
+    //   }
+    // }
   }
 
   .footer-iconlink {
@@ -224,3 +252,7 @@ ul {
     }
   }
 }
+
+// .footer-close {
+//   display: flex;
+// }

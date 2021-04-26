@@ -1,20 +1,73 @@
-import { useState } from "react";
+import { useState, forwardRef } from "react";
 import { Link } from "react-router-dom";
 import SubMenu from "./sub_components/SubMenu";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
-import ytGrey from '../assets/images/icons/yt_grey.svg';
-import pinGrey from '../assets/images/icons/pin_grey.svg';
-import insGrey from '../assets/images/icons/ins_grey.svg';
-import inlGrey from '../assets/images/icons/inl_grey.svg';
-import LogoIcon from '../assets/images/logo.svg';
+import ytGrey from "../assets/images/icons/yt_grey.svg";
+import pinGrey from "../assets/images/icons/pin_grey.svg";
+import insGrey from "../assets/images/icons/ins_grey.svg";
+import inlGrey from "../assets/images/icons/inl_grey.svg";
+import LogoIcon from "../assets/images/logo.svg";
+import {
+  Slide,
+  Dialog,
+  AppBar,
+  Toolbar,
+  IconButton,
+  Typography,
+  makeStyles,
+  List,
+  ListItem,
+  ListItemText,
+  Divider,
+} from "@material-ui/core";
+import { FaTimes } from "react-icons/fa";
+import SubscribeNews from "../components/SubscribeNews";
+const useStyles = makeStyles((theme) => ({
+  // button:{
+  //   backgroundColor:"transparent",
+  //   outline:"none",
+  //   border:"none",
+  //   fontSize:"24px",
+  //   padding:"0px",
+  //   color:""
+  // }
+  //   border: none;
+  //   outline: none;
+  //   font-size: 24px;
+  //   padding: 0;
+  //   color: $secondary-color;
+  //   font-weight: 600;
+  appBar: {
+    position: "relative",
+  },
+  title: {
+    marginLeft: theme.spacing(2),
+    flex: 1,
+  },
+}));
 
-const Footer = ({ hiddenContact = false }) => {
+const Transition = forwardRef(function Transition(props, ref) {
+  return <Slide direction="down" ref={ref} {...props} />;
+});
+
+const Footer = ({ hiddenContact = false, url }) => {
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
 
+  const classes = useStyles();
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <div className="footer ">
-      <div className={hiddenContact ? "d-none" : "d-block"} >
+      <div className={hiddenContact ? "d-none" : "d-block"}>
         <div className="row footer-content  container ">
           <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
             {/* INFO */}
@@ -29,6 +82,68 @@ const Footer = ({ hiddenContact = false }) => {
                   <i className="far fa-paper-plane" /> info@kagency.com
                 </li>
               </ul>
+              <div className="subscribe">
+                {/* <Button
+                  className="footer-modal-button"
+                  variant="outlined"
+                  color="primary"
+                  onClick={handleClickOpen}
+                >
+                  Signup Newsletter
+                </Button> */}
+                <Link to="/" onClick={handleClickOpen}>
+                  <span>Signup Newsletter</span>
+                </Link>
+                <Dialog
+                  fullScreen
+                  open={open}
+                  onClose={handleClose}
+                  TransitionComponent={Transition}
+                >
+                  <div
+                    style={{
+                      height: "100%",
+                      backgroundRepeat: "no-repeat",
+                      backgroundSize: "cover",
+                      background: `linear-gradient(90deg, rgba(8,94,114, 0.6), rgba(8,94,114, 0.8)), url('https://images.unsplash.com/photo-1499854413229-6d1c92ff39ef?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cmFuZG9tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')`,
+                      // backgroundColor: "lightblue",
+                    }}
+                  >
+                    <div
+                      style={{
+                        color: "white",
+                        display: "flex",
+                        width: "90px",
+                        margin: "10% auto 30px auto",
+                      }}
+                      className="subscribe-close"
+                      onClick={handleClose}
+                    >
+                      <FaTimes
+                        className="subscribe-modal-icon"
+                        style={{
+                          display: "block",
+                          // margin: "30px auto",
+                          width: "40px",
+                          height: "40px",
+                        }}
+                      />
+                      <span
+                        style={{
+                          margin: "auto 0px",
+                          fontWeight: "700",
+                          fontSize: "18px",
+                          textTransform: "uppercase",
+                        }}
+                      >
+                        Close
+                      </span>
+                    </div>
+                    <SubscribeNews />
+                  </div>
+                </Dialog>
+              </div>
+              {/* <button>Signup Newsletter</button> */}
             </div>
           </div>
           <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-social">
@@ -37,10 +152,10 @@ const Footer = ({ hiddenContact = false }) => {
               <img src={LogoIcon} height={50} alt=""></img>
             </div>
             <div className="footer-iconlink">
-            <img src={ytGrey} alt="" />
-            <img src={pinGrey} alt="" />
-            <img src={inlGrey} alt="" />
-            <img src={insGrey} alt="" />
+              <img src={ytGrey} alt="" />
+              <img src={pinGrey} alt="" />
+              <img src={inlGrey} alt="" />
+              <img src={insGrey} alt="" />
             </div>
           </div>
           <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-servicelink">

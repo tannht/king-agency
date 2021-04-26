@@ -1,29 +1,24 @@
 import { useState } from "react";
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
 import SubMenu from "./sub_components/SubMenu";
-import ytGrey from '../assets/images/icons/yt_grey.svg';
-import pinGrey from '../assets/images/icons/pin_grey.svg';
-import insGrey from '../assets/images/icons/ins_grey.svg';
-import inlGrey from '../assets/images/icons/inl_grey.svg';
-import LogoIcon from '../assets/images/logo.svg';
-import { makeStyles } from '@material-ui/core/styles';
-import Dialog from '@material-ui/core/Dialog';
+import ytGrey from "../assets/images/icons/yt_grey.svg";
+import pinGrey from "../assets/images/icons/pin_grey.svg";
+import insGrey from "../assets/images/icons/ins_grey.svg";
+import inlGrey from "../assets/images/icons/inl_grey.svg";
+import LogoIcon from "../assets/images/logo.svg";
 import { FaTimes } from "react-icons/fa";
+import SubscribeNews from "../components/SubscribeNews";
+import makeStyles from "@material-ui/core/styles/makeStyles";
+import { IconButton, Toolbar, AppBar, Slide, Dialog } from "@material-ui/core";
+import PrivacyPolicy from "../pages/privacy_policy/PrivacyPolicy";
+import Term from "../pages/privacy_policy/Term";
 
-
-import {IconButton,Toolbar,AppBar,Button,Slide} from '@material-ui/core';
-import Typography from '@material-ui/core/Typography'
-import CloseIcon from '@material-ui/icons/Close';
-
-import PrivacyPolicy from '../pages/privacy_policy/PrivacyPolicy';
-import Term from '../pages/privacy_policy/Term';
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    position: 'relative',
-    alignItems: 'center',
-    backgroundColor:'white'
-
+    position: "relative",
+    alignItems: "center",
+    backgroundColor: "white",
   },
   title: {
     marginLeft: theme.spacing(2),
@@ -32,18 +27,14 @@ const useStyles = makeStyles((theme) => ({
   container: {
     height: 200,
     position: "relative",
-    
   },
-  
+
   buttoncenter: {
-    display:'flex',
-    justifyContent:'center',
-    alignItems:'center',
-
-  
-  }
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
 }));
-
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="bottom" ref={ref} {...props} />;
@@ -52,34 +43,24 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 const TransitionTerm = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
-const Footer = ({ hiddenContact = false }) => {
-  const [modal, setModal] = useState(false);
-  const toggle = () => setModal(!modal);
+
+const Footer = ({ hiddenContact = false, url }) => {
+  const backgroundModal = {
+    background: `linear-gradient(90deg, rgba(8,94,114, 0.6), rgba(8,94,114, 0.8)), 
+        url('https://images.unsplash.com/photo-1499854413229-6d1c92ff39ef?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cmFuZG9tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')`,
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+  };
+
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
-  const [openterm, setOpenTerm] = React.useState(false);
-
-  const handleClickOpen = (event) => {
-    setOpen(true);
-  };
-
-  const handleClose = (event) => {
-    setOpen(false);
-  };
-
-  const handleClickOpenTerm = (event) => {
-    setOpenTerm(true);
-  };
-
-  const handleCloseTerm = (event) => {
-    setOpenTerm(false);
-  };
-
-
+  const [isSubscribeOpen, setSubscribeOpen] = useState(false);
+  const [isPolicyOpen, setPolicyOpen] = React.useState(false);
+  const [isTermOpen, setTermOpen] = React.useState(false);
 
   return (
     <div className="footer ">
-      <div className={hiddenContact ? "d-none" : "d-block"} >
+      <div className={hiddenContact ? "d-none" : "d-block"}>
         <div className="row footer-content  container ">
           <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
             {/* INFO */}
@@ -94,6 +75,52 @@ const Footer = ({ hiddenContact = false }) => {
                   <i className="far fa-paper-plane" /> info@kagency.com
                 </li>
               </ul>
+              <div className="subscribe">
+                <Link to="/" onClick={() => setSubscribeOpen(true)}>
+                  <span>Signup Newsletter</span>
+                </Link>
+                <Dialog
+                  fullScreen
+                  open={isSubscribeOpen}
+                  onClose={() => setSubscribeOpen(false)}
+                  TransitionComponent={Transition}
+                >
+                  <div style={backgroundModal}>
+                    <div
+                      style={{
+                        color: "white",
+                        display: "flex",
+                        width: "90px",
+                        margin: "9% auto 30px auto",
+                      }}
+                      className="subscribe-close"
+                      onClick={() => setSubscribeOpen(false)}
+                    >
+                      <FaTimes
+                        className="subscribe-modal-icon"
+                        style={{
+                          display: "block",
+                          // margin: "30px auto",
+                          width: "40px",
+                          height: "40px",
+                        }}
+                      />
+                      <span
+                        style={{
+                          margin: "auto 0px",
+                          fontWeight: "700",
+                          fontSize: "18px",
+                          textTransform: "uppercase",
+                        }}
+                      >
+                        Close
+                      </span>
+                    </div>
+                    <SubscribeNews />
+                  </div>
+                </Dialog>
+              </div>
+              {/* <button>Signup Newsletter</button> */}
             </div>
           </div>
           <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-social">
@@ -102,10 +129,10 @@ const Footer = ({ hiddenContact = false }) => {
               <img src={LogoIcon} height={50} alt=""></img>
             </div>
             <div className="footer-iconlink">
-            <img src={ytGrey} alt="" />
-            <img src={pinGrey} alt="" />
-            <img src={inlGrey} alt="" />
-            <img src={insGrey} alt="" />
+              <img src={ytGrey} alt="" />
+              <img src={pinGrey} alt="" />
+              <img src={inlGrey} alt="" />
+              <img src={insGrey} alt="" />
             </div>
           </div>
           <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-servicelink">
@@ -124,12 +151,14 @@ const Footer = ({ hiddenContact = false }) => {
             <div className="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
               <ul>
                 <li>
-                  <Link to="#" onClick={handleClickOpen}>
+                  <Link to="#" onClick={() => setPolicyOpen(true)}>
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link onClick={handleClickOpenTerm} to="#">Terms and Conditions</Link>
+                  <Link onClick={() => setTermOpen(true)} to="#">
+                    Terms and Conditions
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -137,39 +166,54 @@ const Footer = ({ hiddenContact = false }) => {
         </div>
       </div>
 
-    {/* Start of Chính sách quyền riêng tư Modal*/}
+      {/* Start of Chính sách quyền riêng tư Modal*/}
 
-      <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
-        <AppBar color="secondary"  className={classes.appBar}>
+      <Dialog
+        fullScreen
+        open={isPolicyOpen}
+        onClose={isPolicyOpen}
+        TransitionComponent={Transition}
+      >
+        <AppBar color="secondary" className={classes.appBar}>
           <Toolbar>
-            <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
-            <FaTimes style={{color:'black'}}  />
+            <IconButton
+              edge="start"
+              color="inherit"
+              onClick={() => setPolicyOpen(false)}
+              aria-label="close"
+            >
+              <FaTimes style={{ color: "black" }} />
             </IconButton>
-            
-           
           </Toolbar>
         </AppBar>
-       
-      <PrivacyPolicy/>
-      </Dialog>
-    {/* End of Chính sách quyền riêng tư Modal*/}
 
-    {/* Start of Điều khoản dịch dụ Modal*/}
-      <Dialog fullScreen open={openterm} onClose={handleCloseTerm} TransitionComponent={TransitionTerm}>
-        <AppBar color="secondary"  className={classes.appBar}>
+        <PrivacyPolicy />
+      </Dialog>
+      {/* End of Chính sách quyền riêng tư Modal*/}
+
+      {/* Start of Điều khoản dịch dụ Modal*/}
+      <Dialog
+        fullScreen
+        open={isTermOpen}
+        onClose={() => setTermOpen(false)}
+        TransitionComponent={TransitionTerm}
+      >
+        <AppBar color="secondary" className={classes.appBar}>
           <Toolbar>
-            <IconButton edge="start" color="inherit" onClick={handleCloseTerm} aria-label="close">
-              <FaTimes style={{color:'black'}}  />
+            <IconButton
+              edge="start"
+              color="inherit"
+              onClick={() => setTermOpen(false)}
+              aria-label="close"
+            >
+              <FaTimes style={{ color: "black" }} />
             </IconButton>
-            
-          
           </Toolbar>
         </AppBar>
-       
-      <Term/>
-      </Dialog>
-         {/* End of Điều khoản dịch dụ Modal*/}
 
+        <Term />
+      </Dialog>
+      {/* End of Điều khoản dịch dụ Modal*/}
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import Carousel from "react-multi-carousel";
 import "./ProjectSlider.scss";
-import "pure-react-carousel/dist/react-carousel.es.css";
 import ProjectItem from "../../../components/projects_components/ProjectItem";
 import "react-multi-carousel/lib/styles.css";
 

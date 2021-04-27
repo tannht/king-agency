@@ -7,6 +7,7 @@ import Info from "./components/Info";
 import "./Home.scss";
 import ClientsLogo from "../../components/ClientsLogo";
 import $ from "jquery";
+import NewProjectButton from "./components/NewProjectButton";
 
 function Home() {
   useEffect(() => {
@@ -54,6 +55,7 @@ function Home() {
         <News />
         <Footer />
       </div>
+      <NewProjectButton />
     </Fragment>
   );
 }

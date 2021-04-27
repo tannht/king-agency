@@ -174,18 +174,15 @@ const Footer = ({ hiddenContact = false, url }) => {
         onClose={isPolicyOpen}
         TransitionComponent={Transition}
       >
-        <AppBar color="secondary" className={classes.appBar}>
+        <div color="secondary" className={classes.buttoncenter}>
           <Toolbar>
-            <IconButton
-              edge="start"
-              color="inherit"
-              onClick={() => setPolicyOpen(false)}
-              aria-label="close"
-            >
-              <FaTimes style={{ color: "black" }} />
-            </IconButton>
+            <div className="container" >
+              <div className="btntext" style={{display:'flex',flexDirection:'row'}}>
+              <FaTimes /> <span style={{marginLeft:5}} onClick={()=>setPolicyOpen(false)}>Close</span>
+              </div>
+              </div>
           </Toolbar>
-        </AppBar>
+        </div>
 
         <PrivacyPolicy />
       </Dialog>

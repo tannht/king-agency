@@ -8,8 +8,15 @@ import "./Home.scss";
 import ClientsLogo from "../../components/ClientsLogo";
 import $ from "jquery";
 import ScrollAnimation from 'react-animate-on-scroll';
+import Aos from 'aos';
+import "aos/dist/aos.css"
 
 function Home() {
+
+  useEffect(()=>{
+    Aos.init({duration:800})
+  },[])
+
   useEffect(() => {
     const handleScroll = () => {
       var scroll_pos = window.scrollY;
@@ -23,12 +30,11 @@ function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   });
   const HeaderComponent = () => (
-    <ScrollAnimation animateIn='fadeIn'
-      delay={500}
-      >
+   
 
     <div className="projects-header">
-      <h3>
+
+      <h3 data-aos="fade-up">
         Kagency tự hào được lựa chọn bởi các đối tác như: Samsung, Gigabyte, DEE
         Net, Vala… Sự tận tâm của Kagency được minh chứng qua sự hiệu quả và đảm
         bảo mọi nhu cầu của khách hàng đều được hoàn thành một cách trọn vẹn
@@ -43,7 +49,6 @@ function Home() {
         chọn như là một đối tác chiến lược.
       </p>
     </div>
-    </ScrollAnimation>
   );
   return (
     <Fragment>

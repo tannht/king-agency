@@ -170,13 +170,10 @@ const Footer = ({ hiddenContact = false, url }) => {
 
       <Dialog
       keepMounted
-              fullScreen
-
         open={isPolicyOpen}
         onClose={isPolicyOpen}
         TransitionComponent={Transition}
-        aria-labelledby="responsive-dialog-title"
-
+        fullScreen
       >
         <div color="secondary" className={classes.buttoncenter}>
           <Toolbar>

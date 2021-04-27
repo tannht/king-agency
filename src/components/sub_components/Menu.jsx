@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
+import { Modal, Button } from "antd";
 function Menu() {
   return (
     <div className="list-group main-menu" id="main-menu">

@@ -6,7 +6,7 @@ function SubMenu() {
     <div className="NavLink">
       {/*sub menu */}
       <div className="list-group">
-      <Link to="#">Strategy</Link>
+      <Link to="/sks">Strategy</Link>
       <Link to="#">Branding</Link>
       <Link to="#">Digital Marketing</Link>
       <Link to="#">Web/App</Link>

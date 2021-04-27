@@ -7,6 +7,7 @@ import Info from "./components/Info";
 import "./Home.scss";
 import ClientsLogo from "../../components/ClientsLogo";
 import $ from "jquery";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function Home() {
   useEffect(() => {
@@ -22,6 +23,10 @@ function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   });
   const HeaderComponent = () => (
+    <ScrollAnimation animateIn='fadeIn'
+      delay={500}
+      >
+
     <div className="projects-header">
       <h3>
         Kagency tự hào được lựa chọn bởi các đối tác như: Samsung, Gigabyte, DEE
@@ -38,6 +43,7 @@ function Home() {
         chọn như là một đối tác chiến lược.
       </p>
     </div>
+    </ScrollAnimation>
   );
   return (
     <Fragment>

@@ -1,8 +1,12 @@
 import InfoButton from "../../../components/InfoButton";
 import SubMenu from "../../../components/sub_components/SubMenu";
 import "./Info.scss";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Info = () => (
+  <ScrollAnimation animateIn='fadeIn'
+  delay={500}
+  >
   <div className="Info container">
     <div className="row">
       <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-bg-1"></div>
@@ -55,6 +59,7 @@ const Info = () => (
       <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-bg-2"></div>
     </div>
   </div>
+  </ScrollAnimation>
 );
 
 export default Info;

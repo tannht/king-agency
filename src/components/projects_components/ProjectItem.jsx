@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./ProjectItem.scss";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const ProjectItem = ({ project }) => {
     const RenderTags = () => {
@@ -8,6 +9,9 @@ const ProjectItem = ({ project }) => {
         ));
     }
     return (
+      <ScrollAnimation animateIn='fadeIn'
+      delay={500}
+      >
         <div className="ProjectItem">
           <img
             src={project.url}
@@ -24,6 +28,7 @@ const ProjectItem = ({ project }) => {
             {/* -----------Project Item -----------*/}
           </div>
         </div>
+        </ScrollAnimation>
       );
 }
 

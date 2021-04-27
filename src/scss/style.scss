@@ -50,12 +50,14 @@ ul {
   @include mobile {
     margin: 0 !important;
   }
+
   align-items: center;
   .ant-modal-close-x {
     //position: relative;
 
-    color: #fff;
+    color: rgb(221, 235, 221);
     font-size: 30px;
+  
   }
 
   background-color: $primary-color;
@@ -73,6 +75,7 @@ ul {
   .ant-modal-footer {
     display: none;
   }
+ 
 }
 
 .main-menu {
@@ -80,6 +83,7 @@ ul {
   margin-top: 10%;
   font-size: $menu-fontsize;
   font-weight: 700;
+  animation-name: slidein;
   @include mobile {
     font-size: 24px;
     font-weight: 500;
@@ -88,6 +92,7 @@ ul {
     text-align: center;
   }
 }
+
 .sub-menu {
   font-size: $submenu-fontsize;
 }

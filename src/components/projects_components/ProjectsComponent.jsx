@@ -3,6 +3,7 @@ import ProjectData from "./ProjectData";
 import "./ProjectsComponent.scss";
 import ProjectsEvenColumn from "./ProjectsEvenColumn";
 import ProjectsOddColumn from "./ProjectsOddColumn";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const ProjectsComponent = ({ headerComponent }) => {
   const projects = ProjectData; 
@@ -22,6 +23,7 @@ const ProjectsComponent = ({ headerComponent }) => {
     <div className="ProjectsComponent">
       <div className="container">
         <div className="row reverse-row">
+          
           <ProjectsOddColumn headerComponent={headerComponent} projects={oddProject}/>
           <ProjectsEvenColumn projects={evenProject}/>
         </div>

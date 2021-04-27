@@ -2,7 +2,10 @@ import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer";
 import "./Contact.scss";
-
+const Submit = (event) =>{
+  alert("Not available")
+  event.preventDefault();
+}
 const Contact = () => (
   <Fragment>
     <div className="Contact">
@@ -51,7 +54,7 @@ const Contact = () => (
             </div>
             <div className="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
               <div className="form-contact">
-                <form action="/">
+                <form onSubmit={Submit} method="post">
                   <div className="row">
                     <div className="col-6">
                       <input

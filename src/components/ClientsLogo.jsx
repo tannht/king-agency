@@ -1,6 +1,7 @@
 import React from "react";
 import "./ClientsLogo.scss";
 import LogoPlaceHolder from "../assets/images/logo_placeholder.svg";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const ClientsLogo = () => {
   const logos = [
@@ -19,7 +20,12 @@ const ClientsLogo = () => {
   ];
 
   return (
+  
+
     <div className="ClientsLogo">
+    <ScrollAnimation animateIn='flipInX'
+    delay={800}
+  animateOut='flipOutX'>
       <div className="container">
         <h1>Our Clients</h1>
         <div className="row">
@@ -30,6 +36,8 @@ const ClientsLogo = () => {
           ))}
         </div>
       </div>
+      </ScrollAnimation>
+
     </div>
   );
 };

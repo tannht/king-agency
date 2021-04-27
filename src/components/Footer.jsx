@@ -169,16 +169,20 @@ const Footer = ({ hiddenContact = false, url }) => {
       {/* Start of Chính sách quyền riêng tư Modal*/}
 
       <Dialog
-        fullScreen
+      keepMounted
+              fullScreen
+
         open={isPolicyOpen}
         onClose={isPolicyOpen}
         TransitionComponent={Transition}
+        aria-labelledby="responsive-dialog-title"
+
       >
         <div color="secondary" className={classes.buttoncenter}>
           <Toolbar>
             <div className="container" >
               <div className="btntext" style={{display:'flex',flexDirection:'row'}}>
-              <FaTimes /> <span style={{marginLeft:5}} onClick={()=>setPolicyOpen(false)}>Close</span>
+              <FaTimes style={{marginTop:4}} /> <span style={{marginLeft:5}} onClick={()=>setPolicyOpen(false)}>Close</span>
               </div>
               </div>
           </Toolbar>

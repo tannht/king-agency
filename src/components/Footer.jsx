@@ -89,6 +89,7 @@ const Footer = ({ hiddenContact = false, url }) => {
                   <div style={backgroundModal}>
                     <div
                       style={{
+                          cursor:"pointer",
                         color: "white",
                         display: "flex",
                         width: "90px",

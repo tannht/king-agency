@@ -8,56 +8,61 @@ import "./Home.scss";
 import ClientsLogo from "../../components/ClientsLogo";
 import $ from "jquery";
 import NewProjectButton from "./components/NewProjectButton";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Home() {
-  useEffect(() => {
-    const handleScroll = () => {
-      var scroll_pos = window.scrollY;
-      if (scroll_pos > 1500 && scroll_pos < 3000) {
-        $(".Home").addClass("change-background");
-      } else {
-        $(".Home").removeClass("change-background");
-      }
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  });
-  const HeaderComponent = () => (
-    <div className="projects-header">
-      <h3>
-        Kagency tự hào được lựa chọn bởi các đối tác như: Samsung, Gigabyte, DEE
-        Net, Vala… Sự tận tâm của Kagency được minh chứng qua sự hiệu quả và đảm
-        bảo mọi nhu cầu của khách hàng đều được hoàn thành một cách trọn vẹn
-        nhất.
-      </h3>
-      <p>
-        Với Kagency chúng tôi, khách hàng như một đối tác, chính vì vậy sự phối
-        hợp giữa Kagency và khách hàng là sự kết nối chặt chẽ khiến suốt quá
-        trình đồng hành diễn ra một cách thuận lợi. Kết quả đạt được về sự tăng
-        trưởng doanh thu, danh tiếng thương hiệu của đối tác được đẩy mạnh hơn
-        mong đợi. Đó là lý do vì sao Kagency ngày càng được nhiều khách hàng lựa
-        chọn như là một đối tác chiến lược.
-      </p>
-    </div>
-  );
-  return (
-    <Fragment>
-      <div className="Home">
-        <Banner />
-        <Info />
-        <div
-          className="projects-component"
-          onScroll={() => alert("Table Scrolled")}
-        >
-          <ProjectsComponent headerComponent={<HeaderComponent />} />
-        </div>
-        <ClientsLogo />
-        <News />
-        <Footer />
-      </div>
-      <NewProjectButton />
-    </Fragment>
-  );
+	useEffect(() => {
+		Aos.init({ duration: 800, once: true });
+	}, []);
+	useEffect(() => {
+		const handleScroll = () => {
+			var scroll_pos = window.scrollY;
+			if (scroll_pos > 1500 && scroll_pos < 3000) {
+				$(".Home").addClass("change-background");
+			} else {
+				$(".Home").removeClass("change-background");
+			}
+		};
+		window.addEventListener("scroll", handleScroll, { passive: true });
+		return () => window.removeEventListener("scroll", handleScroll);
+	});
+	const HeaderComponent = () => (
+		<div className="projects-header">
+			<h3 data-aos="fade-up">
+				Kagency tự hào được lựa chọn bởi các đối tác như: Samsung, Gigabyte, DEE
+				Net, Vala… Sự tận tâm của Kagency được minh chứng qua sự hiệu quả và đảm
+				bảo mọi nhu cầu của khách hàng đều được hoàn thành một cách trọn vẹn
+				nhất.
+			</h3>
+			<p data-aos="fade-up">
+				Với Kagency chúng tôi, khách hàng như một đối tác, chính vì vậy sự phối
+				hợp giữa Kagency và khách hàng là sự kết nối chặt chẽ khiến suốt quá
+				trình đồng hành diễn ra một cách thuận lợi. Kết quả đạt được về sự tăng
+				trưởng doanh thu, danh tiếng thương hiệu của đối tác được đẩy mạnh hơn
+				mong đợi. Đó là lý do vì sao Kagency ngày càng được nhiều khách hàng lựa
+				chọn như là một đối tác chiến lược.
+			</p>
+		</div>
+	);
+	return (
+		<Fragment>
+			<div className="Home">
+				<Banner />
+				<Info />
+				<div
+					className="projects-component"
+					onScroll={() => alert("Table Scrolled")}
+				>
+					<ProjectsComponent headerComponent={<HeaderComponent />} />
+				</div>
+				<ClientsLogo />
+				<News />
+				<Footer />
+			</div>
+			<NewProjectButton />
+		</Fragment>
+	);
 }
 
 export default Home;

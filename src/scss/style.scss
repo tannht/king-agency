@@ -1,17 +1,45 @@
 @import "./variables.scss";
 
+.backTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($color: black, $alpha: 0.6);
+  color: white;
+  height: 40px;
+  width: 40px;
+  border: 2px solid white;
+  border-radius: 100%;
+  svg {
+    padding: 2px;
+  }
+}
+
+.backTopDark {
+  // border: 2px solid white;
+  // svg {
+  // 	color: white;
+  // }
+  border: none;
+  background-color: rgba($color: white, $alpha: 0.9);
+  opacity: 0.6;
+  svg {
+    color: black;
+  }
+}
+
 p {
   font-size: 1rem;
   @include mobile {
     font-size: 12px;
   }
 }
+
 ul {
   list-style: none;
 }
 .hide {
   display: none !important;
-  duration: 3s;
 }
 .header-section {
   position: fixed;
@@ -150,26 +178,6 @@ ul {
         font-weight: 500;
       }
     }
-
-    // .subscribe-modal-button {
-    //   background-color: transparent;
-    //   border: none;
-    //   outline: none;
-    //   font-size: 24px;
-    //   padding: 0;
-    //   color: $secondary-color;
-    //   font-weight: 600;
-    //   appearance: none;
-    //   :focus {
-    //     outline: none;
-    //     border: none;
-    //   }
-    //   :active {
-    //     outline: none;
-    //     background-color: transparent;
-    //     color: $secondary-color;
-    //   }
-    // }
   }
 
   .footer-iconlink {

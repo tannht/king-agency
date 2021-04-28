@@ -1,8 +1,9 @@
 @import "/src/scss/variables.scss";
 @import "/src/assets/css/animate.min.css";
-$bgcolor1 : #001d26;
-$bgcolor2 : #fff;
+$bgcolor1: #001d26;
+$bgcolor2: #fff;
 .Home {
+  transition: all 1s ease;
   margin: auto;
   .projects-component {
     transition: background-color 0.3s ease-in-out 0s;

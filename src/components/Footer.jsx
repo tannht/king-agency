@@ -60,7 +60,7 @@ const Footer = ({ hiddenContact = false, url }) => {
   const [isTermOpen, setTermOpen] = React.useState(false);
 
   return (
-    <div className="footer ">
+    <div className="footer" id="footer">
       <div className={hiddenContact ? "d-none" : "d-block"}>
         <div className="row footer-content  container ">
           <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
@@ -89,7 +89,7 @@ const Footer = ({ hiddenContact = false, url }) => {
                   <div style={backgroundModal}>
                     <div
                       style={{
-                          cursor:"pointer",
+                        cursor: "pointer",
                         color: "white",
                         display: "flex",
                         width: "90px",
@@ -102,7 +102,6 @@ const Footer = ({ hiddenContact = false, url }) => {
                         className="subscribe-modal-icon"
                         style={{
                           display: "block",
-                          // margin: "30px auto",
                           width: "40px",
                           height: "40px",
                         }}
@@ -122,7 +121,6 @@ const Footer = ({ hiddenContact = false, url }) => {
                   </div>
                 </Dialog>
               </div>
-              {/* <button>Signup Newsletter</button> */}
             </div>
           </div>
           <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-social">
@@ -171,7 +169,7 @@ const Footer = ({ hiddenContact = false, url }) => {
       {/* Start of Chính sách quyền riêng tư Modal*/}
 
       <Dialog
-      keepMounted
+        keepMounted
         open={isPolicyOpen}
         onClose={isPolicyOpen}
         TransitionComponent={Transition}
@@ -179,11 +177,20 @@ const Footer = ({ hiddenContact = false, url }) => {
       >
         <div color="secondary" className={classes.buttoncenter}>
           <Toolbar>
-            <div className="container" >
-              <div className="btntext" style={{display:'flex',flexDirection:'row'}}>
-              <FaTimes style={{marginTop:4}} /> <span style={{marginLeft:5}} onClick={()=>setPolicyOpen(false)}>Close</span>
+            <div className="container">
+              <div
+                className="btntext"
+                style={{ display: "flex", flexDirection: "row" }}
+              >
+                <FaTimes style={{ marginTop: 4 }} />{" "}
+                <span
+                  style={{ marginLeft: 5 }}
+                  onClick={() => setPolicyOpen(false)}
+                >
+                  Close
+                </span>
               </div>
-              </div>
+            </div>
           </Toolbar>
         </div>
 

@@ -1,4 +1,5 @@
-@import '../../../scss/style.scss';
+@import "./../../../scss/variables.scss";
+@import "../../../scss/style.scss";
 .Info {
   padding-bottom: 5em;
   background: url("../../../assets/images/dot_wage.png");
@@ -31,12 +32,11 @@
     text-transform: uppercase;
   }
   h3 {
-    color:#2d2d2d;
+    color: #2d2d2d;
     letter-spacing: 0.1;
     line-height: 1.25;
   }
   p {
-    
     line-height: 1.2;
   }
   ul {
@@ -50,19 +50,25 @@
     padding-bottom: 1em;
     text-transform: uppercase;
   }
-  a {
-    color: gray;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
+
   .Link {
     padding-bottom: 2em;
   }
 }
 .submenu {
   .NavLink a {
-    line-height: 2
+    color: #aaa;
+    padding-bottom: 0.4em;
+    font-size: 18px;
+    font-weight: bold;
   }
+}
+
+.info .darkText {
+  h3 {
+    color: white;
+  }
+  color: white;
 }
 
 @media (max-width: 671px) {

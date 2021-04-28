@@ -17,18 +17,29 @@ function Home() {
   }, []);
   useEffect(() => {
     const handleScroll = () => {
-      var scroll_pos = window.scrollY;
-      if (scroll_pos > 1500 && scroll_pos < 3000) {
+      let scroll_pos = window.scrollY + $(window).height();
+      const beginAnimationPosition = $("#beginAnimationId").offset().top;
+      const endAnimationPosition = $("#endAnimationId").offset().top;
+      if (
+        scroll_pos > beginAnimationPosition &&
+        scroll_pos < endAnimationPosition
+      ) {
         $(".Home").addClass("change-background");
+        $(".InfoButton").addClass("dark");
+        $(".InfoButton-padding").addClass("dark");
+        $(".toggleDark").addClass("darkText");
       } else {
         $(".Home").removeClass("change-background");
+        $(".InfoButton").removeClass("dark");
+        $(".InfoButton-padding").removeClass("dark");
+        $(".toggleDark").removeClass("darkText");
       }
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   });
   const HeaderComponent = () => (
-    <div className="projects-header">
+    <div className="projects-header" id="beginAnimationId">
       <h3 data-aos="fade-up">
         Kagency tự hào được lựa chọn bởi các đối tác như: Samsung, Gigabyte, DEE
         Net, Vala… Sự tận tâm của Kagency được minh chứng qua sự hiệu quả và đảm

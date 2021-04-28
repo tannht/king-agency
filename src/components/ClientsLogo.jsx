@@ -19,7 +19,7 @@ const ClientsLogo = () => {
   ];
 
   return (
-    <div className="ClientsLogo">
+    <div className="ClientsLogo" id="endAnimationId">
       <div className="container">
         <h1 data-aos="fade-up">Our Clients</h1>
         <div className="row">

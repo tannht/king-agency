@@ -46,6 +46,7 @@ const TransitionTerm = React.forwardRef(function Transition(props, ref) {
 
 const Footer = ({ hiddenContact = false, url }) => {
   const backgroundModal = {
+    minHeight: "100vh",
     background: `linear-gradient(90deg, rgba(8,94,114, 0.6), rgba(8,94,114, 0.8)), 
         url('https://images.unsplash.com/photo-1499854413229-6d1c92ff39ef?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cmFuZG9tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')`,
     backgroundRepeat: "no-repeat",
@@ -88,6 +89,7 @@ const Footer = ({ hiddenContact = false, url }) => {
                   <div style={backgroundModal}>
                     <div
                       style={{
+                          cursor:"pointer",
                         color: "white",
                         display: "flex",
                         width: "90px",

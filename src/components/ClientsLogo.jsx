@@ -1,7 +1,6 @@
 import React from "react";
-import "./ClientsLogo.scss";
 import LogoPlaceHolder from "../assets/images/logo_placeholder.svg";
-import ScrollAnimation from 'react-animate-on-scroll';
+import "./ClientsLogo.scss";
 
 const ClientsLogo = () => {
   const logos = [
@@ -20,24 +19,26 @@ const ClientsLogo = () => {
   ];
 
   return (
-  
-
     <div className="ClientsLogo">
-    <ScrollAnimation animateIn='flipInX'
-    delay={800}
-  animateOut='flipOutX'>
       <div className="container">
-        <h1>Our Clients</h1>
+        <h1 data-aos="fade-up">Our Clients</h1>
         <div className="row">
           {logos.map((logo, index) => (
-            <div className="col-4 col-xs-4 col-sm-4 col-md-3 col-lg-2 col-xl-2" key={index} >
-              <img src={logo} alt="" key={index} />
+            <div
+              className="col-4 col-xs-4 col-sm-4 col-md-3 col-lg-2 col-xl-2"
+              key={index}
+            >
+              <img
+                data-aos="fade-up"
+                data-aos-delay={100 * (Math.floor(Math.random() * 10) + 1)}
+                src={logo}
+                alt=""
+                key={index}
+              />
             </div>
           ))}
         </div>
       </div>
-      </ScrollAnimation>
-
     </div>
   );
 };

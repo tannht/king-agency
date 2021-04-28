@@ -1,41 +1,38 @@
-import ReactDOM from 'react-dom'
-
+import Slide from "@material-ui/core/Slide";
+import { Button } from "antd";
 import React, { useState } from "react";
-import { Modal, Button ,Popover} from "antd";
+import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
-import SubMenu from './SubMenu';
-import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
-import Menu from './Menu'
-import Dialog from '@material-ui/core/Dialog';
-import Slide from '@material-ui/core/Slide';
-import ScrollAnimation from 'react-animate-on-scroll';
+import SubMenu from "./SubMenu";
+import $ from "jquery"
+import "./submenu.css";
 
-import  './submenu.css';
 const NavButton = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [isModalsubMenu, setModalSubmenu] = useState(false);
-  const [submenu,setSubmenu] = useState("none");
+  const [submenu, setSubmenu] = useState("none");
   const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
   });
-  
-  const openNav = () => {
-    let element = document.getElementById('myNav')
-    ReactDOM.findDOMNode(element).style.height = "100%";
-}
 
-const closeNav = () => {
-  let element = document.getElementById('myNav')
-  ReactDOM.findDOMNode(element).style.height = "0%";
-}
-const showMenu =  () =>{
-  let element = document.getElementById('menusub');
-  ReactDOM.findDOMNode(element).display = "block";
-}
-const hideMenu =  () =>{
-  let element = document.getElementById('menusub');
-  ReactDOM.findDOMNode(element).display = "none";
-}
+  const openNav = () => {
+    let element = document.getElementById("myNav");
+    ReactDOM.findDOMNode(element).style.height = "100%";
+  };
+
+  const closeNav = () => {
+    let element = document.getElementById('myNav')
+    ReactDOM.findDOMNode(element).style.height = "0%";
+  }
+  const showMenu = () => {
+    let element = document.getElementById('menusub');
+    ReactDOM.findDOMNode(element).display = "block";
+  }
+  const hideMenu = () => {
+    let element = document.getElementById('menusub');
+    ReactDOM.findDOMNode(element).display = "none";
+  }
+
   // const showModal = () => {
   //   setIsModalVisible(true);
   // };
@@ -46,7 +43,7 @@ const hideMenu =  () =>{
   // const handleOk = () => {
   //   setIsModalVisible(false);
   // };
-  
+
   // const hideSubMenu = () =>{
   //   setSubmenu("none")
 
@@ -56,7 +53,7 @@ const hideMenu =  () =>{
   // };
   const content = (
     <div>
-     <SubMenu />
+      <SubMenu />
     </div>
   );
   return (
@@ -64,23 +61,49 @@ const hideMenu =  () =>{
       <Button className="menu-collapse" onClick={openNav} label="menu">
         <i className="fas fa-bars fa-2x"></i>
       </Button>
-        {/* <Menu  className="MenuStyle"/> */}
-        <div id="myNav" className="overlay">
-  <a className="closebtn" onClick={closeNav} >&times;</a>
-  <div className="overlay-content">
-  
-  <Link className="menu-item" onClick={closeNav} to="/" >Home</Link>
-      <Link className="menu-item" onClick={closeNav} to="/about-us" >About us</Link>
-      <Link className="menu-item" onMouseEnter={showMenu} onMouseLeave={hideMenu} onClick={closeNav} to="/our-work" >Our work</Link>
-      <Link className="myMenu"  onClick={closeNav} to="/projects" >Projects</Link>
-    
-      <Link className="menu-item" onClick={closeNav} to="/blog" >Blog</Link>
-      <Link className="menu-item" onClick={closeNav} to="/contact-us" >Contact us</Link>
-  </div>
-  <div id="menusub">
-      kksk
+      {/* <Menu  className="MenuStyle"/> */}
+      <div id="myNav" className="overlay">
+        <a className="closebtn" onClick={closeNav} >&times;</a>
+        <div className="overlay-content">
+
+          <Link className="menu-item" onClick={closeNav} to="/" >Home</Link>
+          <Link className="menu-item" onClick={closeNav} to="/about-us" >About us</Link>
+          <Link className="menu-item" onMouseEnter={showMenu} onMouseLeave={hideMenu} onClick={closeNav} to="/our-work" >Our work</Link>
+          <Link className="myMenu" onClick={closeNav} to="/projects" >Projects</Link>
+
+          <Link className="menu-item" onClick={closeNav} to="/blog" >Blog</Link>
+          <Link className="menu-item" onClick={closeNav} to="/contact-us" >Contact us</Link>
+        </div>
+        <div id="menusub">
+          kksk
     </div>
-</div>
+      </div>
+      {/* <Menu  className="MenuStyle"/> */}
+      <div id="myNav" className="overlay">
+        <a className="closebtn" onClick={closeNav}>
+          &times;
+        </a>
+        <div className="overlay-content">
+          <Link className="menu-item" onClick={closeNav} to="/">
+            Home
+          </Link>
+          <Link className="menu-item" onClick={closeNav} to="/about-us">
+            About us
+          </Link>
+          <Link className="menu-item" onClick={closeNav} to="/our-work">
+            Our work
+          </Link>
+          <Link className="menu-item" onClick={closeNav} to="/projects">
+            Projects
+          </Link>
+          <Link className="menu-item" onClick={closeNav} to="/blog">
+            Blog
+          </Link>
+          <Link className="menu-item" onClick={closeNav} to="/contact-us">
+            Contact us
+          </Link>
+        </div>
+      </div>
 
       {/* <Modal
         className="NavButtonModal"
@@ -106,6 +129,6 @@ const hideMenu =  () =>{
        */}
     </div>
   );
-}
+};
 
 export default NavButton;

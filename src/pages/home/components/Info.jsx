@@ -1,7 +1,6 @@
 import InfoButton from "../../../components/InfoButton";
 import SubMenu from "../../../components/sub_components/SubMenu";
 import "./Info.scss";
-import ScrollAnimation from "react-animate-on-scroll";
 
 const Info = () => (
   <div className="Info container">

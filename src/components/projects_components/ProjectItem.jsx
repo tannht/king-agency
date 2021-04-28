@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./ProjectItem.scss";
-import ScrollAnimation from "react-animate-on-scroll";
 
 const ProjectItem = ({ project }) => {
   const RenderTags = () => {

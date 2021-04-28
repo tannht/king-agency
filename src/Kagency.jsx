@@ -13,7 +13,6 @@ import PrivacyPolicy from "./pages/privacy_policy/PrivacyPolicy";
 import Branding from "./pages/branding/Branding";
 import BlogDetailPage from "./pages/blog/BlogDetailPage";
 import ProjectDetailPage from "./pages/projects/ProjectDetailPage";
-import "animate.css/animate.min.css";
 
 const Kagency = () => {
   return (

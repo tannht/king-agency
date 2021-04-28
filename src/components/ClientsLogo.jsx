@@ -1,7 +1,6 @@
 import React from "react";
-import "./ClientsLogo.scss";
 import LogoPlaceHolder from "../assets/images/logo_placeholder.svg";
-import ScrollAnimation from "react-animate-on-scroll";
+import "./ClientsLogo.scss";
 
 const ClientsLogo = () => {
   const logos = [

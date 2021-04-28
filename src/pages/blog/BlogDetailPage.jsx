@@ -6,11 +6,10 @@ import { FaUserCircle, FaRegCalendarAlt } from "react-icons/fa";
 import ClientsLogo from "../../components/ClientsLogo";
 import Footer from "../../components/Footer";
 import MoreBlog from "./components/MoreBlog";
-import ytGrey from '../../assets/images/icons/yt_grey.svg';
-import pinGrey from '../../assets/images/icons/pin_grey.svg';
-import insGrey from '../../assets/images/icons/ins_grey.svg';
-import inlGrey from '../../assets/images/icons/inl_grey.svg';
-import ScrollAnimation from 'react-animate-on-scroll';
+import ytGrey from "../../assets/images/icons/yt_grey.svg";
+import pinGrey from "../../assets/images/icons/pin_grey.svg";
+import insGrey from "../../assets/images/icons/ins_grey.svg";
+import inlGrey from "../../assets/images/icons/inl_grey.svg";
 
 const BlogDetailPage = () => {
   const { id } = useParams();
@@ -57,9 +56,6 @@ const BlogDetailPage = () => {
       <div className="BlogDetailPage">
         <BlogHeader />
         <div className="container">
-        <ScrollAnimation animateIn='fadeIn'
-      delay={500}
-      >
           <div
             className="blog-content"
             dangerouslySetInnerHTML={createMarkup()}
@@ -70,7 +66,6 @@ const BlogDetailPage = () => {
             <img src={inlGrey} alt="" />
             <img src={insGrey} alt="" />
           </div>
-          </ScrollAnimation>
         </div>
         <MoreBlog category={blog.category} />
         <ClientsLogo />

@@ -13,7 +13,7 @@ import makeStyles from "@material-ui/core/styles/makeStyles";
 import { IconButton, Toolbar, AppBar, Slide, Dialog } from "@material-ui/core";
 import PrivacyPolicy from "../pages/privacy_policy/PrivacyPolicy";
 import Term from "../pages/privacy_policy/Term";
-
+import SocialIcon from '../socialcomponent/SocialIcon';
 const useStyles = makeStyles((theme) => ({
   appBar: {
     position: "relative",
@@ -43,7 +43,12 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 const TransitionTerm = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
-
+const icons = [
+  ytGrey, 
+  pinGrey,
+  inlGrey,
+  insGrey
+]
 const Footer = ({ hiddenContact = false, url }) => {
   const backgroundModal = {
     minHeight: "100vh",
@@ -131,10 +136,8 @@ const Footer = ({ hiddenContact = false, url }) => {
               <img src={LogoIcon} height={50} alt=""></img>
             </div>
             <div className="footer-iconlink">
-              <img src={ytGrey} alt="" />
-              <img src={pinGrey} alt="" />
-              <img src={inlGrey} alt="" />
-              <img src={insGrey} alt="" />
+            <SocialIcon icons={icons}/>
+
             </div>
           </div>
           <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-servicelink">

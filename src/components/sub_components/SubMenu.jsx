@@ -6,7 +6,7 @@ function SubMenu(props) {
     <div className="NavLink">
       {/*sub menu */}
       <div className="list-group">
-        <Link data-aos={props.animation ? "fade-up" : ""} to="#">
+        <Link data-aos={props.animation ? "fade-up" : ""} to="/test">
           Strategy
         </Link>
         <Link data-aos={props.animation ? "fade-up" : ""} to="#">

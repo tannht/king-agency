@@ -1,7 +1,48 @@
 import React from "react";
 import "./NewProjectForm.scss";
-
+import {useState,useEffect} from 'react';
+import axios from 'axios'
 const NewProjectForm = () => {
+  const [fname, setFName] = useState("");
+  const [lname, setLName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [content, setContent] = useState("");
+
+  const handleFName =  (event) =>{
+      setFName(event.target.value);
+  }   
+
+  const handleLName =  (event) =>{
+    setLName(event.target.value)
+  }
+  const handlePhone =  (event) =>{
+    setPhone(event.target.value)
+    
+  } 
+ 
+  const handleEmail =  (event) =>{
+    setEmail(event.target.value);
+  } 
+
+ 
+  const handleContent =  (event) =>{
+    setContent(event.target.value);
+  } 
+
+const submit = (event) =>{
+  alert(fname)
+  axios.post('http://localhost:8080/api/contact',{
+    fname,
+    lname,
+    phone,
+    email,
+    
+  }).then((res)=>{
+
+  })
+  event.preventDefault();
+}
   return (
     <>
       <div className="newProjectForm">
@@ -22,26 +63,30 @@ const NewProjectForm = () => {
           </div>
         </div>
         <div className="newProjectForm-right">
-          <form>
-            <input type="text" placeholder="First name" />
-            <input type="text" placeholder="Last name" />
+          <form onSubmit={submit} method='post'>
+            <input onChange={handleFName} type="text" placeholder="First name" />
+            <input onChange={handleLName} type="text" placeholder="Last name" />
             <input
               style={{ gridColumn: "1/3" }}
               type="text"
               placeholder="Your phone"
+              onChange={handlePhone}
             />
             <input
               style={{ gridColumn: "1/3" }}
               type="text"
               placeholder="Your email"
+              onChange={handleEmail}
             />
             <textarea
               style={{ gridColumn: "1/3", gridRow: "4/7" }}
               type="text"
               placeholder="Your brief:"
+              onChange={handleContent}
             ></textarea>
+            <button type='submit' className="newProject-signup">SIGN UP</button>
+
           </form>
-          <button className="newProject-signup">SIGN UP</button>
         </div>
       </div>
       <div className="social-links">

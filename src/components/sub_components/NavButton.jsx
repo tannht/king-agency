@@ -28,6 +28,14 @@ const closeNav = () => {
   let element = document.getElementById('myNav')
   ReactDOM.findDOMNode(element).style.height = "0%";
 }
+const showMenu =  () =>{
+  let element = document.getElementById('menusub');
+  ReactDOM.findDOMNode(element).display = "block";
+}
+const hideMenu =  () =>{
+  let element = document.getElementById('menusub');
+  ReactDOM.findDOMNode(element).display = "none";
+}
   // const showModal = () => {
   //   setIsModalVisible(true);
   // };
@@ -63,11 +71,15 @@ const closeNav = () => {
   
   <Link className="menu-item" onClick={closeNav} to="/" >Home</Link>
       <Link className="menu-item" onClick={closeNav} to="/about-us" >About us</Link>
-      <Link className="menu-item" onClick={closeNav} to="/our-work" >Our work</Link>
-      <Link className="menu-item"  onClick={closeNav} to="/projects" >Projects</Link>
+      <Link className="menu-item" onMouseEnter={showMenu} onMouseLeave={hideMenu} onClick={closeNav} to="/our-work" >Our work</Link>
+      <Link className="myMenu"  onClick={closeNav} to="/projects" >Projects</Link>
+    
       <Link className="menu-item" onClick={closeNav} to="/blog" >Blog</Link>
       <Link className="menu-item" onClick={closeNav} to="/contact-us" >Contact us</Link>
   </div>
+  <div id="menusub">
+      kksk
+    </div>
 </div>
 
       {/* <Modal

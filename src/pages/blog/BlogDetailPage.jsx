@@ -10,6 +10,7 @@ import ytGrey from "../../assets/images/icons/yt_grey.svg";
 import pinGrey from "../../assets/images/icons/pin_grey.svg";
 import insGrey from "../../assets/images/icons/ins_grey.svg";
 import inlGrey from "../../assets/images/icons/inl_grey.svg";
+import MetaTags from 'react-meta-tags';
 
 const BlogDetailPage = () => {
   const { id } = useParams();
@@ -27,6 +28,13 @@ const BlogDetailPage = () => {
     return (
       <div className="BlogDetailHeader" style={backgroundBanner}>
         <div className="container">
+        <MetaTags>
+            <title>{blog.title}| KaGenCy</title>
+            <meta name="description" content="Kagency tự hào được lựa chọn bởi các đối tác như: Samsung, Gigabyte, DEE
+        Net, Vala… ." />
+            <meta property="og:title" content="About Us | KaGenCy" />
+            <meta property="og:image" content="path/to/image.jpg" />
+          </MetaTags>
           <div className="row">
             <div className="col-12">
               <div className="title">

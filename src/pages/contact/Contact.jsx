@@ -2,6 +2,8 @@ import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer";
 import "./Contact.scss";
+import MetaTags from 'react-meta-tags';
+
 const Submit = (event) =>{
   alert("Not available")
   event.preventDefault();
@@ -9,6 +11,13 @@ const Submit = (event) =>{
 const Contact = () => (
   <Fragment>
     <div className="Contact">
+    <MetaTags>
+            <title>Liên Hệ Với Chúng Tôi | KaGenCy</title>
+            <meta name="description" content="Kagency tự hào được lựa chọn bởi các đối tác như: Samsung, Gigabyte, DEE
+        Net, Vala… ." />
+            <meta property="og:title" content="About Us | KaGenCy" />
+            <meta property="og:image" content="path/to/image.jpg" />
+          </MetaTags>
       <div className="container">
         <div className="row contact-row">
           <div className="col-12">

@@ -37,6 +37,7 @@ const submit = (event) =>{
     lname,
     phone,
     email,
+    content
     
   }).then((res)=>{
 

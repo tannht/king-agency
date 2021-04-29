@@ -7,10 +7,17 @@ import ClientsLogo from "../../components/ClientsLogo";
 import OurTeam from "./components/OurTeam";
 import { Fragment } from "react";
 import Footer from "../../components/Footer";
-
+import MetaTags from 'react-meta-tags';
 const AboutUs = () => (
   <Fragment>
     <div className="AboutUs">
+    <MetaTags>
+            <title>About Us | KaGenCy</title>
+            <meta name="description" content="Kagency tự hào được lựa chọn bởi các đối tác như: Samsung, Gigabyte, DEE
+        Net, Vala… ." />
+            <meta property="og:title" content="About Us | KaGenCy" />
+            <meta property="og:image" content="path/to/image.jpg" />
+          </MetaTags>
       <div className="container">
         <PageDescription
           title="About Us"

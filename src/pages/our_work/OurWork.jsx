@@ -4,11 +4,19 @@ import ServiceItem from "./components/ServiceItem";
 import ClientsLogo from "../../components/ClientsLogo";
 import "./OurWork.scss";
 import Footer from "../../components/Footer";
+import MetaTags from 'react-meta-tags';
 
 const OurWork = () => (
   <Fragment>
   <div className="OurWork">
     <div className="container">
+    <MetaTags>
+            <title>Our Work | KaGenCy</title>
+            <meta name="description" content="Kagency tự hào được lựa chọn bởi các đối tác như: Samsung, Gigabyte, DEE
+        Net, Vala… ." />
+            <meta property="og:title" content="About Us | KaGenCy" />
+            <meta property="og:image" content="path/to/image.jpg" />
+          </MetaTags>
       <PageDescription
         title="Our Services"
         titleContent="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"

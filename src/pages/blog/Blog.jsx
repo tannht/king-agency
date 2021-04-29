@@ -6,12 +6,20 @@ import { Fragment } from "react";
 import BlogData from "./BlogData";
 import InfoButton from "../../components/InfoButton";
 import "./Blog.scss";
+import MetaTags from 'react-meta-tags';
 
 const Blog = () => {
   const data = BlogData;
   return (
     <Fragment>
       <div className="Blog">
+      <MetaTags>
+            <title>Blog| KaGenCy</title>
+            <meta name="description" content="Kagency tự hào được lựa chọn bởi các đối tác như: Samsung, Gigabyte, DEE
+        Net, Vala… ." />
+            <meta property="og:title" content="About Us | KaGenCy" />
+            <meta property="og:image" content="path/to/image.jpg" />
+          </MetaTags>
         <PageImageDescription
           url={"https://wallpaperaccess.com/full/656665.jpg"}
           titleHeader="blog"

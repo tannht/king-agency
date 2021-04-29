@@ -10,6 +10,7 @@ import $ from "jquery";
 import NewProjectButton from "./components/NewProjectButton";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import MetaTags from 'react-meta-tags';
 
 function Home() {
   useEffect(() => {
@@ -40,6 +41,13 @@ function Home() {
   });
   const HeaderComponent = () => (
     <div className="projects-header" id="beginAnimationId">
+      <MetaTags>
+        <title>Trang chủ | KaGenCy</title>
+        <meta name="description" content="Kagency tự hào được lựa chọn bởi các đối tác như: Samsung, Gigabyte, DEE
+        Net, Vala… ." />
+        <meta property="og:title" content="Trang chủ | KaGenCy" />
+        <meta property="og:image" content="path/to/image.jpg" />
+      </MetaTags>
       <h3 data-aos="fade-up">
         Kagency tự hào được lựa chọn bởi các đối tác như: Samsung, Gigabyte, DEE
         Net, Vala… Sự tận tâm của Kagency được minh chứng qua sự hiệu quả và đảm

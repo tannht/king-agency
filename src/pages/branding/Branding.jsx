@@ -7,6 +7,7 @@ import BrandingList from "./BrandingList";
 import ServiceTable from "./ServiceTable";
 import { Fragment } from "react";
 import BrandingData from "./BrandingData";
+import MetaTags from 'react-meta-tags';
 
 const Branding = () => {
   const data = BrandingData;
@@ -15,6 +16,13 @@ const Branding = () => {
     <Fragment>
       <div className="Branding">
         <div className="container">
+        <MetaTags>
+            <title>Branding| KaGenCy</title>
+            <meta name="description" content="Kagency tự hào được lựa chọn bởi các đối tác như: Samsung, Gigabyte, DEE
+        Net, Vala… ." />
+            <meta property="og:title" content="Branding| KaGenCy" />
+            <meta property="og:image" content="path/to/image.jpg" />
+          </MetaTags>
           <PageDescription
             title="Branding"
             titleContent="The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested."

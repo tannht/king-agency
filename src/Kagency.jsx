@@ -23,13 +23,11 @@ const Kagency = () => {
       if ($("#beginAnimationId").offset() && $("#endAnimationId").offset()) {
         const beginAnimationPosition = $("#beginAnimationId").offset().top;
         const endAnimationPosition = $("#endAnimationId").offset().top;
-        console.log(beginAnimationPosition, endAnimationPosition);
         if (
           scroll_pos > footerPosition ||
           (scroll_pos > beginAnimationPosition &&
             scroll_pos < endAnimationPosition)
         ) {
-          console.log("added dark class to 2 fixed button");
           $(".button-start-project-modal").addClass("project-button-dark");
           $(".backTop").addClass("backTopDark");
         } else {

@@ -13,7 +13,7 @@ import makeStyles from "@material-ui/core/styles/makeStyles";
 import { IconButton, Toolbar, AppBar, Slide, Dialog } from "@material-ui/core";
 import PrivacyPolicy from "../pages/privacy_policy/PrivacyPolicy";
 import Term from "../pages/privacy_policy/Term";
-import SocialIcon from '../socialcomponent/SocialIcon';
+import SocialIcon from "../socialcomponent/SocialIcon";
 const useStyles = makeStyles((theme) => ({
   appBar: {
     position: "relative",
@@ -43,17 +43,12 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 const TransitionTerm = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
-const icons = [
-  ytGrey, 
-  pinGrey,
-  inlGrey,
-  insGrey
-]
+const icons = [ytGrey, pinGrey, inlGrey, insGrey];
 const Footer = ({ hiddenContact = false, url }) => {
   const backgroundModal = {
-    minHeight: "100vh",
+    height: "150vh",
     background: `linear-gradient(90deg, rgba(8,94,114, 0.6), rgba(8,94,114, 0.8)), 
-        url('https://images.unsplash.com/photo-1499854413229-6d1c92ff39ef?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cmFuZG9tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')`,
+        url('https://images.unsplash.com/photo-1573495612077-a689b084faab?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI4fGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')`,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundSize: "cover",
@@ -131,11 +126,13 @@ const Footer = ({ hiddenContact = false, url }) => {
           <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-social">
             <h3>Social Link</h3>
             <div className="footer-fanpage">
-              <img src={LogoIcon} height={50} alt=""></img>
+              {/* <img src={LogoIcon} height={50} alt=""></img> */}
+              <a href="https://www.facebook.com/kagencyvietnam" target="_blank">
+                https://www.facebook.com/kagencyvietnam
+              </a>
             </div>
             <div className="footer-iconlink">
-            <SocialIcon icons={icons}/>
-
+              <SocialIcon icons={icons} />
             </div>
           </div>
           <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-servicelink">

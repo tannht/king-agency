@@ -27,12 +27,12 @@ function Home() {
         $(".Home").addClass("change-background");
         $(".InfoButton").addClass("dark");
         $(".InfoButton-padding").addClass("dark");
-        $(".toggleDark").addClass("darkText");
+        $(".darkHeading").addClass("darkText");
       } else {
         $(".Home").removeClass("change-background");
         $(".InfoButton").removeClass("dark");
         $(".InfoButton-padding").removeClass("dark");
-        $(".toggleDark").removeClass("darkText");
+        $(".darkHeading").removeClass("darkText");
       }
     };
     window.addEventListener("scroll", handleScroll, { passive: true });

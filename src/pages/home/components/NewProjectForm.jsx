@@ -1,7 +1,7 @@
 import React from "react";
 import "./NewProjectForm.scss";
-import {useState,useEffect} from 'react';
-import axios from 'axios'
+import { useState, useEffect } from "react";
+import axios from "axios";
 const NewProjectForm = () => {
   const [fname, setFName] = useState("");
   const [lname, setLName] = useState("");
@@ -9,40 +9,37 @@ const NewProjectForm = () => {
   const [email, setEmail] = useState("");
   const [content, setContent] = useState("");
 
-  const handleFName =  (event) =>{
-      setFName(event.target.value);
-  }   
+  const handleFName = (event) => {
+    setFName(event.target.value);
+  };
 
-  const handleLName =  (event) =>{
-    setLName(event.target.value)
-  }
-  const handlePhone =  (event) =>{
-    setPhone(event.target.value)
-    
-  } 
- 
-  const handleEmail =  (event) =>{
+  const handleLName = (event) => {
+    setLName(event.target.value);
+  };
+  const handlePhone = (event) => {
+    setPhone(event.target.value);
+  };
+
+  const handleEmail = (event) => {
     setEmail(event.target.value);
-  } 
+  };
 
- 
-  const handleContent =  (event) =>{
+  const handleContent = (event) => {
     setContent(event.target.value);
-  } 
+  };
 
-const submit = (event) =>{
-  alert(fname)
-  axios.post('http://localhost:8080/api/contact',{
-    fname,
-    lname,
-    phone,
-    email,
-    
-  }).then((res)=>{
-
-  })
-  event.preventDefault();
-}
+  const submit = (event) => {
+    alert(fname);
+    axios
+      .post("http://localhost:8080/api/contact", {
+        fname,
+        lname,
+        phone,
+        email,
+      })
+      .then((res) => {});
+    event.preventDefault();
+  };
   return (
     <>
       <div className="newProjectForm">
@@ -63,9 +60,19 @@ const submit = (event) =>{
           </div>
         </div>
         <div className="newProjectForm-right">
-          <form onSubmit={submit} method='post'>
-            <input onChange={handleFName} type="text" placeholder="First name" />
-            <input onChange={handleLName} type="text" placeholder="Last name" />
+          <form onSubmit={submit} method="post">
+            <input
+              className="newProjectForm-name"
+              onChange={handleFName}
+              type="text"
+              placeholder="First name"
+            />
+            <input
+              className="newProjectForm-name"
+              onChange={handleLName}
+              type="text"
+              placeholder="Last name"
+            />
             <input
               style={{ gridColumn: "1/3" }}
               type="text"
@@ -79,13 +86,19 @@ const submit = (event) =>{
               onChange={handleEmail}
             />
             <textarea
-              style={{ gridColumn: "1/3", gridRow: "4/7" }}
+              className="newProjectForm-textarea"
+              //   style={{ gridColumn: "1/3", gridRow: "4/7" }}
               type="text"
               placeholder="Your brief:"
               onChange={handleContent}
             ></textarea>
-            <button type='submit' className="newProject-signup">SIGN UP</button>
-
+            <button
+              style={{ gridColumn: "1/3" }}
+              type="submit"
+              className="newProject-signup"
+            >
+              SIGN UP
+            </button>
           </form>
         </div>
       </div>

@@ -50,21 +50,27 @@
 
 @media screen and (max-width: 671px) {
   .subscribe-modal-content {
-    width: 60%;
+    width: 80%;
     h1 {
-      font-size: 34px;
+      font-size: 30px;
     }
     form {
       input {
-        width: 100%;
+        width: 90%;
       }
+    }
+    p {
+      font-size: 14px;
+    }
+    .subscribe-signup {
+      margin-top: 0px;
     }
   }
 }
 
 @media only screen and (min-width: 671px) and (max-width: 991px) {
   .subscribe-modal-content {
-    width: 60%;
+    width: 80%;
     h1 {
       font-size: 34px;
     }

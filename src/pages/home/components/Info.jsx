@@ -48,8 +48,10 @@ const Info = () => (
     <div className="padding"></div>
     <div className="row info-rows">
       <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info">
-        <h4 data-aos="fade-up">Our Work</h4>
-        <h3 data-aos="fade-up">
+        <h4 data-aos="fade-up" className="darkHeading">
+          Our Work
+        </h4>
+        <h3 data-aos="fade-up" className="darkHeading">
           <strong>Kagency</strong> "phù thuỷ" đưa thương hiệu bạn lên tầm cao
           mới.
         </h3>

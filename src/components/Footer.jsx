@@ -126,7 +126,6 @@ const Footer = ({ hiddenContact = false, url }) => {
           <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-social">
             <h3>Social Link</h3>
             <div className="footer-fanpage">
-<<<<<<< HEAD
               <div
                 class="fb-page"
                 data-href="https://www.facebook.com/kagencyvietnam"
@@ -145,12 +144,6 @@ const Footer = ({ hiddenContact = false, url }) => {
                   <a href="https://www.facebook.com/kagencyvietnam">Kagency</a>
                 </blockquote>
               </div>
-=======
-              {/* <img src={LogoIcon} height={50} alt=""></img> */}
-              <a href="https://www.facebook.com/kagencyvietnam" target="_blank">
-                https://www.facebook.com/kagencyvietnam
-              </a>
->>>>>>> tuananh_mobile_modal
             </div>
             <div className="footer-iconlink">
               <SocialIcon icons={icons} />

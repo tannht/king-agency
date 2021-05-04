@@ -26,22 +26,7 @@ const NewProjectForm = () => {
 
   const handleContent = (event) => {
     setContent(event.target.value);
-<<<<<<< HEAD
-  } 
-
-const submit = (event) =>{
-  alert(fname)
-  axios.post('http://localhost:8080/api/contact',{
-    fname,
-    lname,
-    phone,
-    email,
-    content
-    
-  }).then((res)=>{
-=======
   };
->>>>>>> tuananh_mobile_modal
 
   const submit = (event) => {
     alert(fname);

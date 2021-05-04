@@ -85,7 +85,6 @@ ul {
 
     color: rgb(221, 235, 221);
     font-size: 30px;
-  
   }
 
   background-color: $primary-color;
@@ -103,7 +102,6 @@ ul {
   .ant-modal-footer {
     display: none;
   }
- 
 }
 
 .main-menu {
@@ -246,6 +244,11 @@ ul {
   .footer {
     .footer-content {
       padding: 2em;
+      .footer-social {
+        .footer-fanpage {
+          width: 500px;
+        }
+      }
     }
   }
   .bottom-bar {
@@ -261,6 +264,19 @@ ul {
       .col-12:nth-child(1) {
         padding-left: 0;
         text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 690px) and (max-width: 1078px) {
+  .footer {
+    .footer-content {
+      padding: 2em;
+      .footer-social {
+        .footer-fanpage {
+          width: 190px;
+        }
       }
     }
   }

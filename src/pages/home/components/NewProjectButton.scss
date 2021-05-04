@@ -22,3 +22,10 @@
   color: black;
   border: none;
 }
+
+@media screen and (max-width: 671px) {
+  .button-start-project-modal {
+    bottom: 50px;
+    left: 20px;
+  }
+}

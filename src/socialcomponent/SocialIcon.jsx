@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
-import './social.css'
+import React, { Component } from "react";
+import "./social.css";
 
-const SocialIcon = ({ icons,url }) => {
-    return (<div>
-        <div className="footer-iconlink1">
-            {
-                icons.map((icon) => <img  style={{ marginLeft: 5 }} src={icon} alt="" />)
-            }
-        </div>
-    </div>)
-}
+const SocialIcon = ({ icons, url }) => {
+  return (
+    <div>
+      <div className="footer-iconlink1">
+        {icons.map((icon) => (
+          <img src={icon} alt="" />
+        ))}
+      </div>
+    </div>
+  );
+};
 
-export default SocialIcon
+export default SocialIcon;

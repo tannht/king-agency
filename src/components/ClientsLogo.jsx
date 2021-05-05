@@ -35,7 +35,7 @@ const ClientsLogo = () => {
         <div className="row">
           {logos.map((logo, index) => (
             <div
-              className="col-4 col-xs-4 col-sm-4 col-md-3 col-lg-2 col-xl-2"
+              className="clientLogo-extra-small col-6 col-xs-4 col-sm-4 col-md-3 col-lg-2 col-xl-2"
               key={index}
             >
               <img

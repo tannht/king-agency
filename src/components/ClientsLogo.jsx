@@ -18,6 +18,16 @@ const ClientsLogo = () => {
     LogoPlaceHolder,
   ];
 
+  const randomUnique = (range, count) => {
+    let nums = new Set();
+    while (nums.size < count) {
+      nums.add(Math.floor(Math.random() * range + 1));
+    }
+    return [...nums];
+  };
+  const delayArr = randomUnique(20, 20);
+  console.log(delayArr);
+
   return (
     <div className="ClientsLogo" id="endAnimationId">
       <div className="container">
@@ -30,7 +40,7 @@ const ClientsLogo = () => {
             >
               <img
                 data-aos="fade-up"
-                data-aos-delay={100 * (Math.floor(Math.random() * 10) + 1)}
+                data-aos-delay={delayArr[index] * 100 - 100}
                 src={logo}
                 alt=""
                 key={index}

@@ -42,7 +42,7 @@ function Home() {
   const HeaderComponent = () => (
     <div className="projects-header" id="beginAnimationId">
       <MetaTags>
-        <title>Trang chủ | KaGenCy</title>
+        <title>Trang chủ | KAGENCY</title>
         <meta
           name="description"
           content="Kagency tự hào được lựa chọn bởi các đối tác như: Samsung, Gigabyte, DEE

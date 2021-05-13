@@ -5,7 +5,7 @@
 }
 .navbar {
   .logo {
-    width: 100px!important;
+    width: 100px !important;
     background-color: #001d26;
     padding: 5px 15px;
     border-radius: 10px;
@@ -32,6 +32,9 @@
     }
   }
   .fa-bars {
-    color: black !important;
+    color: aliceblue(238, 222, 222) !important;
+  }
+  .fa-time {
+    color: aliceblue(238, 222, 222) !important;
   }
 }

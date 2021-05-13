@@ -35,6 +35,8 @@ Email: team-dev@kagency.vn
   text-align: center;
   margin-top: 30px;
   transition: 1s;
+  -webkit-animation-name: menuIndown;
+  animation-name: menuIndown;
 }
 
 .logoicon {
@@ -81,6 +83,12 @@ Email: team-dev@kagency.vn
   right: 25%;
   font-size: 10px;
 }
+.fa-times {
+  color: white;
+}
+.fa-bar {
+  color: white;
+}
 .head-nav {
   display: flex;
   position: relative;
@@ -106,15 +114,15 @@ Email: team-dev@kagency.vn
 .dropup-content {
   display: none;
   position: absolute;
-  top: 5%;
-  right: 30%;
+  top: 20%;
+  right: 32%;
   font-size: 10px;
   color: white;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .dropup-content a {
-  padding: 12px 16px;
+  padding: 5px 10px;
   text-decoration: none;
   display: block;
   color: white;
@@ -132,8 +140,77 @@ Email: team-dev@kagency.vn
 
 .dropup:hover .dropup-content {
   display: block;
-  animation-duration: 5s;
-  transition: 3s;
+  -webkit-animation-name: menuIndown;
+  animation-name: menuIndown;
+  transition: 0.5s;
+}
+.menu-animantion {
+  -webkit-animation-name: menuIndown;
+  animation-name: menuIndown;
+  transition: 0.5s;
+}
+@-webkit-keyframes menuIndown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  10% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes menuIndown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  10% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* The Overlay Modal (background) */
@@ -188,6 +265,7 @@ Email: team-dev@kagency.vn
   font-size: 60px;
   color: rgb(172, 46, 46);
 }
+
 @-webkit-keyframes bounceInDown {
   0% {
     opacity: 0;
@@ -229,6 +307,19 @@ Email: team-dev@kagency.vn
 /* .dropup:hover .dropbtn {
 } */
 
+/* For 1280px laptop Resolution */
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) {
+  .dropup-content {
+    display: none;
+    position: absolute;
+    top: 25%;
+    right: 300px;
+    font-size: 10px;
+    color: white;
+    transition: 1s;
+  }
+}
+
 @media (orientation: portrait) {
   .overlay {
     overflow-y: auto;
@@ -244,6 +335,12 @@ Email: team-dev@kagency.vn
   .dropup-content a:hover {
     color: #f1f1f1;
   }
+  .button-start-project-modal {
+    float: right;
+  }
+  .socialicon {
+    display: none;
+  }
 
   .dropup-content a {
     color: #f1f1f1;
@@ -254,5 +351,8 @@ Email: team-dev@kagency.vn
     font-size: 20px;
     color: rgb(205, 215, 231);
     display: block;
+  }
+  .fa-bar {
+    color: white;
   }
 }

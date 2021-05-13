@@ -24,6 +24,7 @@ const NewProjectButton = () => {
         onClick={() => {
           setIsNewProjectOpen(true);
         }}
+        style={{zIndex:200000}}
         className="button-start-project-modal"
       >
         <span>Start Your Project</span>

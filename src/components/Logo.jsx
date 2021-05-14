@@ -11,9 +11,9 @@ const Logo = ({ openmn }) => {
     );
   };
   return (
-    <div style={{ zIndex: 200000 }} className="logo">
+    <div style={{ zIndex: 2000000 }} className="logo">
       <Link to="/">
-        <img alt="" onClick={hanldeCloseNav} src={LogoIcon} width="auto"></img>
+        <img alt="" onClick={hanldeCloseNav} src={LogoIcon}></img>
       </Link>
     </div>
   );

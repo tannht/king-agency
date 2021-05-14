@@ -5,6 +5,7 @@ function SubMenu(props) {
   return (
     <div className="NavLink">
       {/*sub menu */}
+
       <div className="list-group">
         <Link data-aos={props.animation ? "fade-up" : ""} to="/test">
           Strategy

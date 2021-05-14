@@ -7,21 +7,26 @@ import "./Header.scss";
 function Header() {
   return (
     <div className="header-section">
-      <nav className="navbar container">
-        <Logo />
-        <ul className="nav">
-          <li className="nav-item">
-            <Link to="/our-work">Our work</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/contact-us">Contact us</Link>
-          </li>
-        </ul>
-        {/*--NavButtion --*/}
-        <div id="NavButton">
-          <NavButton />
+      <div className="navbar navbar-full">
+        <div className="container">
+          <Logo />
+          <nav className="navbar navbar-expand ">
+            <div className="menunav">
+              <Link className="nav-item" id="menumobile" to="/our-work">
+                Our work
+              </Link>
+              <Link className="nav-item" id="menumobile" to="/contact-us">
+                Contact Us
+              </Link>
+            </div>
+            <div>
+              <span className="nav-icon" onclick="openNav()">
+                <NavButton />
+              </span>
+            </div>
+          </nav>
         </div>
-      </nav>
+      </div>
     </div>
   );
 }

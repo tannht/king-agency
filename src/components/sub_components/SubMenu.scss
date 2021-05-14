@@ -140,9 +140,6 @@ Email: team-dev@kagency.vn
 
 .dropup:hover .dropup-content {
   display: block;
-  -webkit-animation-name: menuIndown;
-  animation-name: menuIndown;
-  transition: 0.5s;
 }
 .menu-animantion {
   -webkit-animation-name: menuIndown;
@@ -243,6 +240,12 @@ Email: team-dev@kagency.vn
   text-align: center; /* Centered text/links */
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
+#menumobile {
+  color: #818181;
+  padding: 8px;
+}
+.menunav {
+}
 
 /* The navigation links inside the overlay */
 .overlaymodal a {
@@ -260,69 +263,98 @@ Email: team-dev@kagency.vn
   color: #f1f1f1;
 }
 
-/* Position the close button (top right corner) */
-.overlaymodal .closebtn {
-  font-size: 60px;
-  color: rgb(172, 46, 46);
-}
-
-@-webkit-keyframes bounceInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-2000px);
-  }
-  60% {
-    opacity: 1;
-    -webkit-transform: translateY(30px);
-  }
-  80% {
-    -webkit-transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-  }
-}
-
-@keyframes bounceInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-2000px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(30px);
-  }
-  80% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.bounceInDown {
-  -webkit-animation-name: bounceInDown;
-  animation-name: bounceInDown;
-}
 /* .dropup:hover .dropbtn {
 } */
 
 /* For 1280px laptop Resolution */
-@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) {
+
+@media only screen and (min-device-width: 900px) and (max-device-width: 1440px) {
   .dropup-content {
-    display: none;
     position: absolute;
     top: 25%;
-    right: 300px;
+    right: 25%;
     font-size: 10px;
     color: white;
     transition: 1s;
+  }
+}
+@media only screen and (min-device-width: 600px) and (max-device-width: 1150px) {
+  .dropup-content {
+    opacity: 0;
+  }
+  .dropup-content a:hover {
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
+  .dropup-content {
+    position: absolute;
+    top: 25%;
+    right: 22%;
+    font-size: 10px;
+    color: white;
+    transition: 1s;
+  }
+}
+@media only screen and (min-device-width: 900px) and (max-device-width: 2000px) {
+  .dropup-content {
+    position: absolute;
+    top: 25%;
+    right: 30%;
+    font-size: 10px;
+    color: white;
+    transition: 1s;
+  }
+}
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .menunav {
+    padding: 0px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  .dropup-content {
+    display: none;
+  }
+  .dropup:hover .dropup-content {
+    display: none;
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .logomobile {
+    width: 50%;
+    height: auto;
+  }
+  .MuiButton-label {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    margin-top: 0%;
+
+    position: absolute;
+    margin-top: 0%;
+    top: 0;
+    color: white;
+  }
+  .fa-bar {
+    display: none;
+    opacity: 0;
   }
 }
 
 @media (orientation: portrait) {
   .overlay {
     overflow-y: auto;
+  }
+  #menumobile {
+    display: none;
   }
   .overlay a {
     font-size: 20px;
@@ -333,8 +365,9 @@ Email: team-dev@kagency.vn
     right: 15px;
   }
   .dropup-content a:hover {
-    color: #f1f1f1;
+    opacity: 0;
   }
+
   .button-start-project-modal {
     float: right;
   }
@@ -343,7 +376,7 @@ Email: team-dev@kagency.vn
   }
 
   .dropup-content a {
-    color: #f1f1f1;
+    opacity: 0;
   }
   .overlay a {
     padding: 8px;
@@ -354,5 +387,9 @@ Email: team-dev@kagency.vn
   }
   .fa-bar {
     color: white;
+  }
+  .dropup-content {
+    display: none;
+    opacity: 0;
   }
 }

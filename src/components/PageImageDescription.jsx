@@ -7,11 +7,11 @@ const PageImageDescription = ({
   content = "",
 }) => {
   const backgroundBanner = {
-    background: `linear-gradient(90deg, rgba(8,94,114, 0.6), rgba(8,94,114, 0.8)), 
+    backgroundImage: `linear-gradient(90deg, rgba(8,94,114, 0.6), rgba(8,94,114, 0.8)), 
     url('${url}')`,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
-    backgroundSize: "space",
+    backgroundSize: "cover",
   };
 
   return (

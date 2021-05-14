@@ -2,17 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import LogoIcon from "../assets/images/logo.svg";
 import $ from "jquery";
-const Logo = () => {
+const Logo = ({ openmn }) => {
   const hanldeCloseNav = () => {
-    $("#myNav").css({ height: 0 });
+    console.log({ openmn });
+    $("#myNav").css({ height: "0%" });
     $("#iconmenu").html(
       `<i style='color:white' class="fas fa-bars fa-2x"></i>`
     );
   };
   return (
     <div style={{ zIndex: 200000 }} className="logo">
-      <Link to="/" onClick={hanldeCloseNav}>
-        <img alt="" src={LogoIcon} width="auto"></img>
+      <Link to="/">
+        <img alt="" onClick={hanldeCloseNav} src={LogoIcon} width="auto"></img>
       </Link>
     </div>
   );

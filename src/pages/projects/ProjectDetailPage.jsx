@@ -82,7 +82,7 @@ const ProjectDetailPage = ({ deviceType }) => {
           dangerouslySetInnerHTML={createMarkup()}
         ></div>
         <div className="container">
-          {/* <ProjectSlider projects={projectsRelated} /> */}
+          <ProjectSlider projects={projectsRelated} />
         </div>
         <ClientsLogo />
         <Footer />

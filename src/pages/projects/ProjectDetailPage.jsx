@@ -50,11 +50,12 @@ const ProjectDetailPage = ({ deviceType }) => {
   // console.log(project);
   // console.log(stateid.posts[0].title);
 
-  // ProjectData.forEach((item) => {
-  //   if (item.tags[0] === project.tags[0] && item.id !== id) {
-  //     projectsRelated.push(item);
-  //   }
-  // });
+  stateid.posts.forEach((item) => {
+    console.log(item);
+    // if (item.tags[0] === project.tags[0] && item.id !== id) {
+    //   projectsRelated.push(item);
+    // }
+  });
 
   const createMarkup = () => {
     if (stateid.loading == true) {

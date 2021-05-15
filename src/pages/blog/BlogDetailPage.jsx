@@ -40,9 +40,11 @@ const BlogDetailPage = () => {
     blogsdetail: {},
     error: "",
   });
+  const load = stateblogdetail.loading;
   useEffect(() => {
     axios.get(`https://kagency-api.herokuapp.com/api/blogs/${id}`).then(
       (res) => {
+        console.log(res.data);
         dispatch({ type: "FETCH_SUCCESS", payload: res.data });
       },
       (error) => {
@@ -52,8 +54,8 @@ const BlogDetailPage = () => {
   }, []);
   const BlogHeader = () => {
     const backgroundBanner = {
-      background: `linear-gradient(0deg, rgba(8,94,114, 0.4), rgba(8,94,114, 0.4)), 
-        url('${stateblogdetail.blogsdetail.url}')`,
+      backgroundImage: `linear-gradient(0deg, rgba(8,94,114, 0.4), rgba(8,94,114, 0.4)), 
+        url('${load ? "Loading" : stateblogdetail.blogsdetail.url}')`,
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
       backgroundSize: "cover",
@@ -63,7 +65,9 @@ const BlogDetailPage = () => {
       <div className="BlogDetailHeader" style={backgroundBanner}>
         <div className="container">
           <MetaTags>
-            <title>{stateblogdetail.blogsdetail.title}| KaGenCy</title>
+            <title>
+              {load ? "Loading" : stateblogdetail.blogsdetail.title}| KaGenCy
+            </title>
             <meta
               name="description"
               content="Kagency tự hào được lựa chọn bởi các đối tác như: Samsung, Gigabyte, DEE
@@ -75,15 +79,16 @@ const BlogDetailPage = () => {
           <div className="row">
             <div className="col-12">
               <div className="title">
-                <h1>{stateblogdetail.blogsdetail.title}</h1>
+                <h1>{load ? "Loading" : stateblogdetail.blogsdetail.title}</h1>
               </div>
               <ul>
                 <li>
-                  <FaUserCircle /> by {stateblogdetail.blogsdetail.created_by}
+                  <FaUserCircle /> by{" "}
+                  {load ? "Loading" : stateblogdetail.blogsdetail.created_by}
                 </li>
                 <li>
                   <FaRegCalendarAlt /> at{" "}
-                  {stateblogdetail.blogsdetail.created_date}
+                  {load ? "Loading" : stateblogdetail.blogsdetail.created_date}
                 </li>
               </ul>
             </div>
@@ -94,9 +99,11 @@ const BlogDetailPage = () => {
   };
 
   const createMarkup = () => {
-    return { __html: `${stateblogdetail.blogsdetail.content}` };
+    return {
+      __html: `${load ? "Loading" : stateblogdetail.blogsdetail.content}`,
+    };
   };
-
+  console.log(load ? "Loading" : stateblogdetail.blogsdetail.category_id);
   return (
     <Fragment>
       <div className="BlogDetailPage">
@@ -113,7 +120,7 @@ const BlogDetailPage = () => {
             <img src={insGrey} alt="" />
           </div>
         </div>
-        <MoreBlog category={stateblogdetail.blogsdetail.category_id} />
+        <MoreBlog category={load ? "Loading" : stateblogdetail.blogsdetail} />
         <ClientsLogo />
         <Footer />
       </div>

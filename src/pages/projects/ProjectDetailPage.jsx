@@ -52,7 +52,7 @@ const ProjectDetailPage = ({ deviceType }) => {
 
   stateid.posts.forEach((item) => {
     console.log(item);
-    // if (item.id !== id) {
+    // if (item.tags[0] === project.tags[0] && item.id !== id) {
     //   projectsRelated.push(item);
     // }
   });

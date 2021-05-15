@@ -30,7 +30,7 @@ const ProjectsComponent = ({ headerComponent }) => {
     posts: [],
   });
 
-  const projects = state.posts.data;
+  const projects = state.posts;
   var oddProject = [];
   var evenProject = [];
 

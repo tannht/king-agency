@@ -4,6 +4,8 @@ import ProjectItem from "../../../components/projects_components/ProjectItem";
 import "react-multi-carousel/lib/styles.css";
 
 const ProjectSlider = ({ projects }) => {
+  console.log(projects);
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -23,15 +25,10 @@ const ProjectSlider = ({ projects }) => {
       items: 1,
     },
   };
-
   return (
     <div className="ProjectSlider">
       <h3>Related Projects</h3>
-      <Carousel
-        ssr
-        partialVisbile
-        responsive={responsive}
-      >
+      <Carousel ssr partialVisbile responsive={responsive}>
         {projects.map((item, index) => {
           return (
             <div className="product-item-slider">

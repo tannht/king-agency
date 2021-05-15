@@ -9,7 +9,7 @@ import "./Blog.scss";
 import MetaTags from "react-meta-tags";
 import axios from "axios";
 
-const reducer = (stateblog, action) => {
+const reducer = (stateBlog, action) => {
   switch (action.type) {
     case "FETCH_SUCCESS":
       return {
@@ -24,30 +24,32 @@ const reducer = (stateblog, action) => {
         error: "Error load data",
       };
     default:
-      return stateblog;
+      return stateBlog;
   }
 };
 
 const Blog = () => {
   const data = BlogData;
-  const [stateblog, setStateblog] = useReducer(reducer, {
+  const [stateBlog, setStateBlog] = useReducer(reducer, {
     loading: true,
     blogs: [],
     error: "",
   });
-  console.log(data[0]);
 
   useEffect(() => {
     axios.get("https://kagency-api.herokuapp.com/api/blogs").then(
       (res) => {
-        setStateblog({ type: "FETCH_SUCCESS", payload: res.data });
+        setStateBlog({ type: "FETCH_SUCCESS", payload: res.data });
       },
       (error) => {
-        setStateblog({ type: "FETCH_ERROR" });
+        setStateBlog({ type: "FETCH_ERROR" });
       }
     );
   }, []);
-  if (stateblog.loading == true) {
+  console.log(stateBlog.blogs);
+  const load = stateBlog.loading;
+  console.log(load);
+  if (stateBlog.loading == true) {
     return (
       <div>
         <p>Loading ..</p>
@@ -93,15 +95,24 @@ const Blog = () => {
                     </ul>
                   </div>
 
-                  <BlogItem blog={stateblog.blogs.data[0]} isMain={true} />
+                  <BlogItem
+                    blog={stateBlog.loading ? "" : stateBlog.blogs[0]}
+                    isMain={true}
+                    test="sksk"
+                    loadmain={stateBlog.loading}
+                  />
                 </div>
                 <div className="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                  <BlogItem blog={stateblog.blogs.data[1]} />
-                  <BlogItem blog={stateblog.blogs.data[2]} />
+                  <BlogItem
+                    blog={stateBlog.loading ? "" : stateBlog.blogs[1]}
+                  />
+                  <BlogItem
+                    blog={stateBlog.loading ? "" : stateBlog.blogs[2]}
+                  />
                 </div>
               </div>
               <div className="row">
-                {stateblog.blogs.data.map((item, i) => {
+                {stateBlog.blogs.map((item, i) => {
                   if (i > 2) {
                     return (
                       <div
